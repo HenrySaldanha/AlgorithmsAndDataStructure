@@ -10,8 +10,10 @@ namespace Algorithms
         public static void Main()
         {
             var array = new SimpleArray<int>();
-            array.Add(1).Add(2).Add(5).Add(10).Add(8).Traverse();
+            array.Add(1).Add(2).Add(5).Add(10).Add(8).Add(16).Traverse();
             array.Remove(1).Traverse();
+
+            array.RemoveAt(2).Traverse();
 
             var circularLinkedList = new CircularLinkedList<int>();
             circularLinkedList.Add(new CircularNode<int>(2)).Add(new CircularNode<int>(3)).Add(new CircularNode<int>(6)).Add(new CircularNode<int>(4)).Traverse();

@@ -1,13 +1,10 @@
-﻿using System;
-
-namespace Algorithms.DataStructure.Array
+﻿namespace Algorithms.DataStructure.Array
 {
     public class SimpleArray<T>
     {
         public T[] Array;
 
         public SimpleArray() => Console.WriteLine($"Class: {GetType().Name}");
-
 
         public SimpleArray<T> Add(T key)
         {
@@ -52,9 +49,22 @@ namespace Algorithms.DataStructure.Array
             return this;
         }
 
-        public SimpleArray<T> RemoveAt(T index)
+        public SimpleArray<T> RemoveAt(int index)
         {
-            //TODO: implement this
+            if (Array is null || index > Array.Length-1)
+                return this;
+
+            var tempArray = new T[Array.Length - 1];
+            for (int i = 0, j = 0; i < Array.Length; i++, j++) 
+            {
+
+                if (i == index)
+                    j--;
+                else
+                    tempArray[j] = Array[i];
+            }
+
+            Array = tempArray;
 
             return this;
         }
