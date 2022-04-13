@@ -4,6 +4,6 @@ For data structure we only analyze time complexity
 
 | Data Structures | Insertion | Remove | Search | Access  |
 |-----------------|-----------|--------|--------|---------|
-| Array           | O(n)      | O(n)   | O(n)   | O(1)    |
-| Doubly-Linked List | O(1)   | O(1) or O(n) | O(n)   | O(n)    |
-| Circular-Linked List | O(1)  | O(1) or O(n)   | O(n)   | O(n)    |
+| [Array](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/Algorithms/DataStructure/Array/SimpleArray.cs)           | O(n)      | O(n)   | O(n)   | O(1)    |
+| [Doubly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/Algorithms/DataStructure/List/DoublyLinkedList/DoublyLinkedList.cs) | O(1)   | O(1) or O(n) | O(n)   | O(n)    |
+| [Circular-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/Algorithms/DataStructure/List/CircularLinkedList/CircularLinkedList.cs) | O(1)  | O(1) or O(n)   | O(n)   | O(n)    |
