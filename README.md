@@ -52,20 +52,3 @@ For data structure, we only look at worst-case time complexity.
 | Kruskal's Algorithm  |      |         |       |
 | Prim's Algorithm     |      |         |       |
 | Dijkstra's Algorithm |      |         |       |
-
-
-## NP-complete problems
-
-
-| Algorithm            | Best | Average | Wrost |
-| -------------------- | ---- | ------- | ----- |
-| Linear (Array)       |      |         |       |
-| Binary Search        |      |         |       |
-| Binary Tree Search   |      |         |       |
-| Breadth-First Search |      |         |       |
-| Depth-First Search   |      |         |       |
-| A*                   |      |         |       |
-| Hash search          |      |         |       |
-| Predictive Search    |      |         |       |
-| Interpolation Search |      |         |
-| Fibonacci Search     |      |         |       |
