@@ -81,7 +81,33 @@
 
         public CircularLinkedList<T> RemoveAt(int index)
         {
-            //TODO: implement this
+            if (FirstNode is null || index > Size - 1)
+                return this;
+
+            if (index == 0)
+            {
+                LastNode.NextNode = FirstNode.NextNode;
+                FirstNode = FirstNode.NextNode;
+                Size--;
+                return this;
+            }
+
+
+            var temp = FirstNode;
+            var i = 0;
+            while (temp.NextNode != null && i != index-1)
+            {
+                temp = temp.NextNode;
+                i++;
+            }
+
+
+            if (LastNode == temp.NextNode)
+                LastNode = temp;
+
+            temp.NextNode = temp.NextNode.NextNode;
+
+            Size--;
 
             return this;
         }

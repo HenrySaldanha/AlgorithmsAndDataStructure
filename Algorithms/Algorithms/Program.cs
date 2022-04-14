@@ -18,10 +18,12 @@ namespace Algorithms
             var circularLinkedList = new CircularLinkedList<int>();
             circularLinkedList.Add(new CircularNode<int>(2)).Add(new CircularNode<int>(3)).Add(new CircularNode<int>(6)).Add(new CircularNode<int>(4)).Traverse();
             circularLinkedList.Remove(4).Traverse();
+            circularLinkedList.RemoveAt(2).Traverse();
 
             var doublyLinkedList = new DoublyLinkedList<int>();
             doublyLinkedList.Add(new DoublyNode<int>(2)).Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(6)).Add(new DoublyNode<int>(4)).Traverse();
             doublyLinkedList.Remove(4).Traverse();
+            doublyLinkedList.RemoveAt(1).Traverse();
         }
     }
 }
