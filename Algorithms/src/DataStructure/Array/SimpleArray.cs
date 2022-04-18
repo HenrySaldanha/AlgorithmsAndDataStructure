@@ -5,8 +5,6 @@
         private T[] Array;
         public int Size;
 
-        public SimpleArray() => Console.WriteLine($"Class: {GetType().Name}");
-
         public SimpleArray<T> Add(T key)
         {
             if (key is null) return this;

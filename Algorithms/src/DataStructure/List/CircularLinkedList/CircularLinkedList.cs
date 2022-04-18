@@ -6,8 +6,6 @@
         public CircularNode<T> LastNode { get; set; }
         public int Size { get; set; }
 
-        public CircularLinkedList() => Console.WriteLine($"Class: {GetType().Name}");
-
         public CircularLinkedList<T> Add(CircularNode<T> node)
         {
             if (node is null)

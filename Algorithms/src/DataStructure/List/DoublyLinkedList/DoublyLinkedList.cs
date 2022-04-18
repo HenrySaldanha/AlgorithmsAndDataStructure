@@ -5,8 +5,6 @@
         public DoublyNode<T> FirstNode { get; set; }
         public int Size { get; set; }
 
-        public DoublyLinkedList() => Console.WriteLine($"Class: {GetType().Name}");
-
         public DoublyLinkedList<T> Add(DoublyNode<T> node)
         {
             if (node is null)
