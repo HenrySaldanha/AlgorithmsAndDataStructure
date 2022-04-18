@@ -21,7 +21,6 @@ namespace Search.Test.BinarySearch
             Assert.True(result);
         }
 
-
         [Theory]
         [InlineData(-50)]
         [InlineData(10)]
