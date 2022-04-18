@@ -36,8 +36,8 @@ For data structure, we only look at worst-case time complexity.
 | Algorithm            | Best | Average | Wrost |
 | -------------------- | ---- | ------- | ----- |
 | [Linear(Array)](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/Linear/Linear.cs)      |   O(1)   |    O(n)     |   O(n)    |
-| [Binary Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearch/BinarySearch.cs)        |      |         |       |
-| Binary Tree Search   |    O(1)  |    O(Log(n))     |    O(Log(n))    |
+| [Binary Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearch/BinarySearch.cs)        |    O(1)  |    O(Log(n))     |    O(Log(n))    |
+| Binary Tree Search   |      |         |       |
 | Breadth-First Search |      |         |       |
 | Depth-First Search   |      |         |       |
 | A*                   |      |         |       |
