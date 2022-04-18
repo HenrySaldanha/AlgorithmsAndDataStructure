@@ -27,7 +27,7 @@ For data structure, we only look at worst-case time complexity.
 | Mergesort      |      |         |       |       |
 | Heapsort       |      |         |       |       |
 | Bubble Sort    |      |         |       |       |
-| Insertion Sort |      |         |       |       |
+|  [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |    O(n)    |
 | Selection Sort |      |         |       |       |
 | Radix sort     |      |         |       |       |
 
