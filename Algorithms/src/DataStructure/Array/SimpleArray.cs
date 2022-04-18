@@ -2,27 +2,29 @@
 {
     public class SimpleArray<T>
     {
-        public T[] Array;
+        private T[] Array;
+        public int Size;
 
         public SimpleArray() => Console.WriteLine($"Class: {GetType().Name}");
 
         public SimpleArray<T> Add(T key)
         {
-            if(key == null) return this;
+            if (key == null) return this;
 
             if (Array is null)
             {
                 Array = new T[] { key };
+                Size = 1;
                 return this;
             }
-               
-            var tempArray = new T[Array.Length+1];
-            for(int i = 0; i < Array.Length; i++)
+
+            var tempArray = new T[Array.Length + 1];
+            for (int i = 0; i < Array.Length; i++)
                 tempArray[i] = Array[i];
 
-            tempArray[tempArray.Length-1] = key;
-
+            tempArray[tempArray.Length - 1] = key;
             Array = tempArray;
+            Size++;
 
             return this;
         }
@@ -33,9 +35,9 @@
                 return this;
 
             var tempArray = new T[Array.Length - 1];
-            for (int i = 0, j = 0; i < Array.Length; i++, j++) 
+            for (int i = 0, j = 0; i < Array.Length; i++, j++)
             {
-                if (j == Array.Length - 1) 
+                if (j == Array.Length - 1 && !Array[i].Equals(key))
                     return this;
 
                 if (Array[i].Equals(key))
@@ -45,17 +47,18 @@
             }
 
             Array = tempArray;
+            Size--;
 
             return this;
         }
 
         public SimpleArray<T> RemoveAt(int index)
         {
-            if (Array is null || index > Array.Length-1)
+            if (Array is null || index < 0 || index > Array.Length - 1)
                 return this;
 
             var tempArray = new T[Array.Length - 1];
-            for (int i = 0, j = 0; i < Array.Length; i++, j++) 
+            for (int i = 0, j = 0; i < Array.Length; i++, j++)
             {
 
                 if (i == index)
@@ -65,6 +68,7 @@
             }
 
             Array = tempArray;
+            Size--;
 
             return this;
         }
