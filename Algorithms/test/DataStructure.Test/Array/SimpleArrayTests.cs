@@ -28,7 +28,7 @@ namespace DataStructure.Array.Test
             array.Add(4).Add(1123).Add(null);
 
             //Assert
-            Assert.Equal(3, array.Size);
+            Assert.Equal(2, array.Size);
         }
 
         [Theory]
