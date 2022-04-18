@@ -31,16 +31,16 @@
 
         public CircularNode<T> Search(int? key = null)
         {
-            if(FirstNode is null) return null;
+            if (FirstNode is null) return null;
 
             var temp = FirstNode;
 
-            for(var i = 0; i < Size; i++)
+            for (var i = 0; i < Size; i++)
             {
-                if(temp.Key.Equals(key))
+                if (temp.Key.Equals(key))
                     return temp;
 
-                 temp = temp.NextNode;
+                temp = temp.NextNode;
             }
 
             return null;
@@ -48,10 +48,10 @@
 
         public CircularLinkedList<T> Remove(int? key = null)
         {
-            if (FirstNode is null) 
+            if (FirstNode is null)
                 return this;
 
-            if(FirstNode.Key.Equals(key))
+            if (FirstNode.Key.Equals(key))
             {
                 LastNode.NextNode = FirstNode.NextNode;
                 FirstNode = FirstNode.NextNode;
@@ -61,13 +61,13 @@
 
             var temp = FirstNode;
             var i = 0;
-            while (temp.NextNode != null && !temp.NextNode.Key.Equals(key) && i<Size)
+            while (temp.NextNode is not null && !temp.NextNode.Key.Equals(key) && i < Size)
             {
                 temp = temp.NextNode;
                 i++;
             }
 
-            if (i >= Size || temp.NextNode is null) 
+            if (i >= Size || temp.NextNode is null)
                 return this;
 
             if (LastNode == temp.NextNode)
@@ -95,7 +95,7 @@
 
             var temp = FirstNode;
             var i = 0;
-            while (temp.NextNode != null && i != index-1)
+            while (temp.NextNode is not null && i != index - 1)
             {
                 temp = temp.NextNode;
                 i++;
@@ -118,7 +118,7 @@
 
             var temp = FirstNode;
 
-            for(int i=0; i<Size-1; i++)
+            for (int i = 0; i < Size - 1; i++)
             {
                 Console.Write(temp.Key + " -> ");
                 temp = temp.NextNode;

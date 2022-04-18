@@ -14,7 +14,7 @@
 
             node.NextNode = null;
 
-            if (FirstNode == null)
+            if (FirstNode is null)
             {
                 FirstNode = node;
                 Size++;
@@ -23,7 +23,7 @@
 
             var temp = FirstNode;
 
-            while (temp.NextNode != null)
+            while (temp.NextNode is not null)
                 temp = temp.NextNode;
 
             temp.NextNode = node;
@@ -111,14 +111,14 @@
             temp.NextNode = temp.NextNode.NextNode;
 
 
-            if (temp.NextNode != null)
+            if (temp.NextNode is not null)
             {
                 if (temp != FirstNode)
                     temp.LastNode = temp;
 
                 temp.NextNode.LastNode = temp;
             }
-                
+
 
             Size--;
             return this;

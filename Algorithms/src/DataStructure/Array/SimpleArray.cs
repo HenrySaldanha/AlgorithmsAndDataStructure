@@ -9,7 +9,7 @@
 
         public SimpleArray<T> Add(T key)
         {
-            if (key == null) return this;
+            if (key is null) return this;
 
             if (Array is null)
             {
