@@ -8,7 +8,7 @@
 
         public CircularLinkedList<T> Add(CircularNode<T> node)
         {
-            if (node is null)
+            if (node is null || node.Key is null)
                 return this;
 
             if (FirstNode is null)
@@ -79,7 +79,7 @@
 
         public CircularLinkedList<T> RemoveAt(int index)
         {
-            if (FirstNode is null || index > Size - 1)
+            if (FirstNode is null || index > Size - 1 || index < 0)
                 return this;
 
             if (index == 0)
