@@ -1,10 +1,10 @@
-﻿using Sorting.InsertionSort;
+﻿using Sorting.MergeSort;
 using System.Linq;
 using Xunit;
 
-namespace Sorting.Test.InsertionSort
+namespace Sorting.Test.MergeSort
 {
-    public class InsertionSortTests
+    public class MergeSortTests
     {
         [Fact]
         public void Order_ClutteredData_OrderData()
