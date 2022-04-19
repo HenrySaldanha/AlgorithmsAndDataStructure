@@ -25,7 +25,7 @@ For data structure, we only look at worst-case time complexity.
 | Algorithm      | Best | Average | Wrost | Space |
 | -------------- | ---- | ------- | ----- | ----- |
 | Quicksort      |      |         |       |       |
-| [Mergesort] (https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   |   O(n)    | 
+| [Mergesort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   |   O(n)    | 
 | Heapsort       |      |         |       |       |
 | Bubble Sort    |      |         |       |       |
 |  [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |    O(n)    |
