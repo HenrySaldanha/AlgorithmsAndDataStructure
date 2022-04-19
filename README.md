@@ -9,6 +9,7 @@ For data structure, we only look at worst-case time complexity.
 | [Array](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Array/SimpleArray.cs)                                         | O(n)      | O(n)         | O(n)   | O(1)   |
 | [Doubly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/DoublyLinkedList/DoublyLinkedList.cs)       | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
 | [Circular-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/CircularLinkedList/CircularLinkedList.cs) | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
+| [Singly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/SinglyLinkedList/SinglyLinkedList.cs) | O(n)      | O(n) | O(n)   | O(n)   |
 | HashMap                                                                                                                                                         |           |              |        |        |
 | Max Heap                                                                                                                                                        |           |              |        |        |
 | Min Heap                                                                                                                                                        |           |              |        |        |
@@ -24,7 +25,7 @@ For data structure, we only look at worst-case time complexity.
 | Algorithm      | Best | Average | Wrost | Space |
 | -------------- | ---- | ------- | ----- | ----- |
 | Quicksort      |      |         |       |       |
-| Mergesort      |      |         |       |       |
+| [Mergesort] (https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   |   O(n)    | 
 | Heapsort       |      |         |       |       |
 | Bubble Sort    |      |         |       |       |
 |  [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |    O(n)    |
