@@ -7,7 +7,7 @@
 
         public SinglyLinkedList<T> Add(SinglyNode<T> node)
         {
-            if (node is null)
+            if (node is null || node.Key is null)
                 return this;
 
             node.NextNode = null;
@@ -79,7 +79,7 @@
 
         public SinglyLinkedList<T> RemoveAt(int index)
         {
-            if (FirstNode is null || index > Size - 1)
+            if (FirstNode is null || index > Size - 1 || index < 0)
                 return this;
 
             if (index == 0)
@@ -90,14 +90,13 @@
             }
 
             var temp = FirstNode;
-            var i = 0;
-            while (i < Size)
+
+            for (var i = 0; i < Size; i++)
             {
                 if (i == index - 1)
                     i = Size;
                 else
                     temp = temp.NextNode;
-
             }
 
             temp.NextNode = temp.NextNode.NextNode;
