@@ -1,36 +1,36 @@
-﻿using Algorithms.DataStructure.List.CircularLinkedList;
+﻿using Algorithms.DataStructure.List.DoublyLinkedList;
 using Xunit;
 
-namespace DataStructure.Test.List.CircularLinkedList
+namespace DataStructure.Test.List.DoublyLinkedList
 {
-    public class CircularLinkedListTests
+    public class DoublyLinkedListTests
     {
         [Fact]
         public void Add_ValidKey_MustAdd()
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
+            var list = new DoublyLinkedList<int>();
 
             //Act
-            list.Add(new CircularNode<int>(3)).Add(new CircularNode<int>(8)).Add(new CircularNode<int>(-2));
+            list.Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(8)).Add(new DoublyNode<int>(-2));
 
             //Assert
             Assert.Equal(3, list.Size);
-            Assert.Equal(list.LastNode, list.FirstNode.NextNode.NextNode);
-            Assert.Equal(3, list.FirstNode.NextNode.NextNode.NextNode.Key);
             Assert.Equal(-2, list.FirstNode.NextNode.NextNode.Key);
             Assert.Equal(8, list.FirstNode.NextNode.Key);
+            Assert.Equal(8, list.FirstNode.NextNode.NextNode.LastNode.Key);
             Assert.Equal(3, list.FirstNode.Key);
+            Assert.Equal(3, list.FirstNode.NextNode.LastNode.Key);
         }
 
         [Fact]
         public void Add_NullKey_DontAdd()
         {
             //Arrange
-            var list = new CircularLinkedList<int?>();
+            var list = new DoublyLinkedList<int?>();
 
             //Act
-            list.Add(new CircularNode<int?>(3)).Add(null).Add(new CircularNode<int?>(null));
+            list.Add(new DoublyNode<int?>(3)).Add(null).Add(new DoublyNode<int?>(null));
 
             //Assert
             Assert.Equal(1, list.Size);
@@ -43,8 +43,8 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void Remove_ValidKey_MustRemove(int key)
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
-            list.Add(new CircularNode<int>(3)).Add(new CircularNode<int>(8)).Add(new CircularNode<int>(-2));
+            var list = new DoublyLinkedList<int>();
+            list.Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(8)).Add(new DoublyNode<int>(-2));
 
             //Act
             list.Remove(key);
@@ -57,7 +57,7 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void Remove_ArrayNull_DontRemove()
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
+            var list = new DoublyLinkedList<int>();
 
             //Act
             list.Remove(133);
@@ -70,8 +70,8 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void Remove_InvalidKey_DontRemove()
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
-            list.Add(new CircularNode<int>(3)).Add(new CircularNode<int>(8)).Add(new CircularNode<int>(-2));
+            var list = new DoublyLinkedList<int>();
+            list.Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(8)).Add(new DoublyNode<int>(-2));
 
             //Act
             list.Remove(1);
@@ -87,8 +87,8 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void RemoveAt_ValidIndex_MustRemove(int index)
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
-            list.Add(new CircularNode<int>(3)).Add(new CircularNode<int>(8)).Add(new CircularNode<int>(-2));
+            var list = new DoublyLinkedList<int>();
+            list.Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(8)).Add(new DoublyNode<int>(-2));
 
             //Act
             list.RemoveAt(index);
@@ -101,7 +101,7 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void RemoveAt_ArrayNull_DontRemove()
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
+            var list = new DoublyLinkedList<int>();
 
             //Act
             list.RemoveAt(0);
@@ -116,8 +116,8 @@ namespace DataStructure.Test.List.CircularLinkedList
         public void RemoveAt_InvalidIndex_DontRemove(int index)
         {
             //Arrange
-            var list = new CircularLinkedList<int>();
-            list.Add(new CircularNode<int>(3)).Add(new CircularNode<int>(8)).Add(new CircularNode<int>(-2));
+            var list = new DoublyLinkedList<int>();
+            list.Add(new DoublyNode<int>(3)).Add(new DoublyNode<int>(8)).Add(new DoublyNode<int>(-2));
 
             //Act
             list.RemoveAt(index);
