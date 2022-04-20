@@ -3,7 +3,7 @@
     public class SimpleArray<T>
     {
         private T[] Array;
-        public int Size;
+        public int Size { get; private set; }
 
         public SimpleArray<T> Add(T key)
         {

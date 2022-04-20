@@ -2,8 +2,8 @@
 {
     public class SinglyLinkedList<T>
     {
-        public SinglyNode<T> FirstNode { get; set; }
-        public int Size { get; set; }
+        public SinglyNode<T> FirstNode { get; private set; }
+        public int Size { get; private set; }
 
         public SinglyLinkedList<T> Add(SinglyNode<T> node)
         {

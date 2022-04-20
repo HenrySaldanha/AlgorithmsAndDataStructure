@@ -2,8 +2,8 @@
 {
     public class DoublyLinkedList<T>
     {
-        public DoublyNode<T> FirstNode { get; set; }
-        public int Size { get; set; }
+        public DoublyNode<T> FirstNode { get; private set; }
+        public int Size { get; private set; }
 
         public DoublyLinkedList<T> Add(DoublyNode<T> node)
         {

@@ -2,9 +2,9 @@
 {
     public class CircularLinkedList<T>
     {
-        public CircularNode<T> FirstNode { get; set; }
-        public CircularNode<T> LastNode { get; set; }
-        public int Size { get; set; }
+        public CircularNode<T> FirstNode { get; private set; }
+        public CircularNode<T> LastNode { get; private set; }
+        public int Size { get; private set; }
 
         public CircularLinkedList<T> Add(CircularNode<T> node)
         {
