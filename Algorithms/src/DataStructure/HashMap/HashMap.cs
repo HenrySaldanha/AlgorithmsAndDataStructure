@@ -82,7 +82,7 @@
 
             for (int i = 0; i < Buckets.Length; i++)
             {
-                if (Buckets[i] == null) continue;
+                if (Buckets[i] is null) continue;
 
                 foreach (var node in Buckets[i])
                 {
