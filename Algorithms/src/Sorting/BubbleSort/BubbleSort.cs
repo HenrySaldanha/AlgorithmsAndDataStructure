@@ -25,6 +25,7 @@
 
             if (!swapped)
                 return;
+
             Order(array, n - 1);
         }
 

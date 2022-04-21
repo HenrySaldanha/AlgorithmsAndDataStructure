@@ -9,31 +9,31 @@
             if (end == null)
                 end = array.Length - 1;
 
-            var pivot = array[ini];
-            var ini_index = ini + 1;
-            var end_index = end.Value;
+            var pivot = array[(ini+end.Value)/2];
+            var iniIndex = ini;
+            var endIndex = end.Value;
 
-            while (ini_index <= end_index)
+            while (iniIndex <= endIndex)
             {
-                if (array[ini_index] <= pivot)
-                    ini_index++;
-                else if (array[end_index] > pivot)
-                    end_index--;
+                if (array[iniIndex] <= pivot)
+                    iniIndex++;
+                else if (array[endIndex] > pivot)
+                    endIndex--;
                 else
                 {
-                    var swap = array[end_index];
-                    array[end_index] = array[ini_index];
-                    array[ini_index] = swap;
-                    ini_index++;
-                    end_index--;
+                    var swap = array[endIndex];
+                    array[endIndex] = array[iniIndex];
+                    array[iniIndex] = swap;
+                    iniIndex++;
+                    endIndex--;
                 }
             }
 
-            array[ini] = array[end_index];
-            array[end_index] = pivot;
+            array[ini] = array[endIndex];
+            array[endIndex] = pivot;
 
-            Order(array, ini, end_index - 1);
-            Order(array, end_index + 1, end);
+            Order(array, ini, endIndex - 1);
+            Order(array, endIndex + 1, end);
         }
 
         public static void OrderDesc(this int[] array, int ini = 0, int? end = null)
@@ -43,32 +43,31 @@
             if (end == null)
                 end = array.Length - 1;
 
-            var pivot = array[ini];
-            var ini_index = ini + 1;
-            var end_index = end.Value;
+            var pivot = array[(ini + end.Value) / 2];
+            var iniIndex = ini;
+            var endIndex = end.Value;
 
-            while (ini_index <= end_index)
+            while (iniIndex <= endIndex)
             {
-                if (array[ini_index] >= pivot)
-                    ini_index++;
-                else if (array[end_index] < pivot)
-                    end_index--;
+                if (array[iniIndex] >= pivot)
+                    iniIndex++;
+                else if (array[endIndex] < pivot)
+                    endIndex--;
                 else
                 {
-                    var swap = array[end_index];
-                    array[end_index] = array[ini_index];
-                    array[ini_index] = swap;
-                    ini_index++;
-                    end_index--;
+                    var swap = array[endIndex];
+                    array[endIndex] = array[iniIndex];
+                    array[iniIndex] = swap;
+                    iniIndex++;
+                    endIndex--;
                 }
             }
 
-            array[ini] = array[end_index];
-            array[end_index] = pivot;
+            array[ini] = array[endIndex];
+            array[endIndex] = pivot;
 
-            OrderDesc(array, ini, end_index - 1);
-            OrderDesc(array, end_index + 1, end);
+            OrderDesc(array, ini, endIndex - 1);
+            OrderDesc(array, endIndex + 1, end);
         }
-
     }
 }

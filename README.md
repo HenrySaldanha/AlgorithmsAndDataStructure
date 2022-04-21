@@ -28,8 +28,8 @@ For data structure, we only look at worst-case time complexity.
 | [Mergesort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   | 
 | Heapsort       |      |         |       |       |
 | [Bubble Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/BubbleSort/BubbleSort.cs) | O(n)      | O(n^2) | O(n^2)   |
-|  [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
-| Selection Sort |      |         |       |
+| [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
+| [Selection Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/SelectionSort.cs) | O(n^2)   |   O(n^2)      |    O(n^2)    |  
 | Radix sort     |      |         |       | 
 
 ## Search Algorithms

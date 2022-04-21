@@ -12,63 +12,63 @@
             MergeSortOrder(array, 0, array.Length - 1, false);
         }
 
-        private static void MergeSortOrder(int[] array, int ini_index, int end_index, bool asc)
+        private static void MergeSortOrder(int[] array, int iniIndex, int endIndex, bool asc)
         {
-            if (ini_index < end_index)
+            if (iniIndex < endIndex)
             {
-                var middle = (ini_index + end_index) / 2;
-                MergeSortOrder(array, ini_index, middle, asc);
-                MergeSortOrder(array, middle + 1, end_index, asc);
-                Merge(array, ini_index, middle, end_index, asc);
+                var middle = (iniIndex + endIndex) / 2;
+                MergeSortOrder(array, iniIndex, middle, asc);
+                MergeSortOrder(array, middle + 1, endIndex, asc);
+                Merge(array, iniIndex, middle, endIndex, asc);
             }
 
         }
 
-        private static void Merge(int[] array, int ini_index, int middle, int end_index, bool asc)
+        private static void Merge(int[] array, int iniIndex, int middle, int endIndex, bool asc)
         {
-            var left_array = new int[middle - ini_index + 1];
-            var right_array = new int[end_index - middle];
+            var left_array = new int[middle - iniIndex + 1];
+            var right_array = new int[endIndex - middle];
 
             for (int i = 0; i < left_array.Length; i++)
-                left_array[i] = array[ini_index + i];
+                left_array[i] = array[iniIndex + i];
 
             for (int j = 0; j < right_array.Length; j++)
                 right_array[j] = array[middle + j + 1];
 
 
-            var left_index = 0;
-            var right_index = 0;
-            var array_index = ini_index;
+            var leftIndex = 0;
+            var rightIndex = 0;
+            var arrayIndex = iniIndex;
 
-            while (left_index < left_array.Length && right_index < right_array.Length)
+            while (leftIndex < left_array.Length && rightIndex < right_array.Length)
             {
-                if ((left_array[left_index] < right_array[right_index] && asc) ||
-                    (left_array[left_index] > right_array[right_index] && !asc))
+                if ((left_array[leftIndex] < right_array[rightIndex] && asc) ||
+                    (left_array[leftIndex] > right_array[rightIndex] && !asc))
                 {
-                    array[array_index] = left_array[left_index];
-                    left_index++;
+                    array[arrayIndex] = left_array[leftIndex];
+                    leftIndex++;
                 }
                 else
                 {
-                    array[array_index] = right_array[right_index];
-                    right_index++;
+                    array[arrayIndex] = right_array[rightIndex];
+                    rightIndex++;
                 }
 
-                array_index++;
+                arrayIndex++;
             }
 
-            while (left_index < left_array.Length)
+            while (leftIndex < left_array.Length)
             {
-                array[array_index] = left_array[left_index];
-                left_index++;
-                array_index++;
+                array[arrayIndex] = left_array[leftIndex];
+                leftIndex++;
+                arrayIndex++;
             }
 
-            while (right_index < right_array.Length)
+            while (rightIndex < right_array.Length)
             {
-                array[array_index] = right_array[right_index];
-                right_index++;
-                array_index++;
+                array[arrayIndex] = right_array[rightIndex];
+                rightIndex++;
+                arrayIndex++;
             }
         }
     }
