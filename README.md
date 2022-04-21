@@ -11,23 +11,23 @@ For data structure, we only look at worst-case time complexity.
 | [Circular-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/CircularLinkedList/CircularLinkedList.cs) | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
 | [Singly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/SinglyLinkedList/SinglyLinkedList.cs) | O(n)      | O(n) | O(n)   | O(n)   |
 [Hash Map](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/HashMap/HashMap.cs) | O(n)      | O(n) | O(n)   | O(n)   |
-| Max Heap                                                                                                                                                        |           |              |        |        |
-| Min Heap                                                                                                                                                        |           |              |        |        |
-| AVL                                                                                                                                                             |           |              |        |        |
-| Binary Search Tree                                                                                                                                              |           |              |        |        |
-| B-Tree                                                                                                                                                          |           |              |        |        |
-| B+ Tree                                                                                                                                                         |           |              |        |        |
-| Red-Black Tree                                                                                                                                                  |           |              |        |        |
-| 2-3 Tree                                                                                                                                                        |           |              |        |        |
+| Max Heap   |           |              |        |        |
+| Min Heap   |           |              |        |        |
+| AVL        |           |              |        |        |
+| Binary Search Tree |           |              |        |        |
+| B-Tree   |           |              |        |        |
+| B+ Tree  |           |              |        |        |
+| Red-Black Tree |           |              |        |        |
+| 2-3 Tree  |           |              |        |        |
 
 ## Sorting Algorithms
 
 | Algorithm      | Best | Average | Wrost | Space |
 | -------------- | ---- | ------- | ----- | ----- |
 | Quicksort      |      |         |       |       |
-| [Mergesort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   |   O(n)    | 
+| [Mergesort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   |   O(n)    |
 | Heapsort       |      |         |       |       |
-| Bubble Sort    |      |         |       |       |
+| [Bubble Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/BubbleSort/BubbleSort.cs) | O(n)      | O(n^2) | O(n^2)   | O(n)   |
 |  [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |    O(n)    |
 | Selection Sort |      |         |       |       |
 | Radix sort     |      |         |       |       |

@@ -1,8 +1,8 @@
-﻿using Sorting.InsertionSort;
+﻿using Sorting.BubbleSort;
 using System.Linq;
 using Xunit;
 
-namespace Sorting.Test.InsertionSort
+namespace Sorting.Test.BubbleSort
 {
     public class BubbleSortTests
     {
