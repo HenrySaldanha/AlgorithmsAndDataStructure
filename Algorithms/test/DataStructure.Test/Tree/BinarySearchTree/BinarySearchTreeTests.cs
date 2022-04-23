@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace DataStructure.Test.BinarySearchTree
+namespace DataStructure.Test.Tree.BinarySearchTree
 {
     public class BinarySearchTreeTests
     {
@@ -8,7 +8,7 @@ namespace DataStructure.Test.BinarySearchTree
         public void Add_ValidValue_MustAdd()
         {
             //Arrange
-            Tree.BinarySearchTree.BinarySearchTree tree = new Tree.BinarySearchTree.BinarySearchTree();
+            DataStructure.Tree.BinarySearchTree.BinarySearchTree tree = new DataStructure.Tree.BinarySearchTree.BinarySearchTree();
 
             //Act
             tree.Add(10).Add(5).Add(1).Add(15).Add(22).Add(7).Add(20);
@@ -27,7 +27,7 @@ namespace DataStructure.Test.BinarySearchTree
         public void Remove_ValidValue_MustRemove()
         {
             //Arrange
-            Tree.BinarySearchTree.BinarySearchTree tree = new Tree.BinarySearchTree.BinarySearchTree();
+            DataStructure.Tree.BinarySearchTree.BinarySearchTree tree = new DataStructure.Tree.BinarySearchTree.BinarySearchTree();
             tree.Add(10).Add(5).Add(1).Add(15).Add(22).Add(7).Add(20);
 
             //Act
@@ -46,7 +46,7 @@ namespace DataStructure.Test.BinarySearchTree
         public void Remove_InvalidValue_DontRemove()
         {
             //Arrange
-            Tree.BinarySearchTree.BinarySearchTree tree = new Tree.BinarySearchTree.BinarySearchTree();
+            DataStructure.Tree.BinarySearchTree.BinarySearchTree tree = new DataStructure.Tree.BinarySearchTree.BinarySearchTree();
             tree.Add(10).Add(5).Add(1).Add(15).Add(22).Add(7).Add(20);
 
             //Act
