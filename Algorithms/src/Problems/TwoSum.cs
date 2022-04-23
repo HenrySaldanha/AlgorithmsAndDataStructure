@@ -1,8 +1,5 @@
-﻿using System.Collections.Generic;
-
-namespace Problems
+﻿namespace Problems
 {
-
     ///<summary>
     /// Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
     /// You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -28,9 +25,13 @@ namespace Problems
             for (var i = 0; i < nums.Length; i++)
             {
                 var complement = target - nums[i];
-                if (dict.TryGetValue(complement, out var res) && res != i)
+
+                if (dict.ContainsKey(complement))
                 {
-                    return i < res ? new[] { i, res } : new[] { res, i };
+                    var res = dict[complement];
+
+                    if (res != i)
+                        return new[] { res, i };
                 }
 
                 dict[nums[i]] = i;
@@ -39,11 +40,12 @@ namespace Problems
             return new int[] { -1, -1 };
         }
 
+
         public int[] SolutionB(int[] nums, int target)
         {
             for (var i = 0; i < nums.Length; i++)
             {
-                for (var j = 0; j < nums.Length; j++)
+                for (var j = 1; j < nums.Length; j++)
                 {
                     if (j == i)
                         continue;
@@ -57,6 +59,25 @@ namespace Problems
             return new int[] { -1, -1 };
         }
 
+        public int[] SolutionC(int[] nums, int target)
+        {
+            int i1 = 0, j1 = 0;
 
+            System.Threading.Tasks.Parallel.For(0, nums.Length, (i, stateI) =>
+            {
+                System.Threading.Tasks.Parallel.For(1, nums.Length, (j, stateJ) =>
+                {
+                    if (nums[i] + nums[j] == target && j != i)
+                    {
+                        i1 = i;
+                        j1 = j;
+                        stateI.Break();
+                        stateJ.Break();
+                    }
+                });
+            });
+
+            return j1 < i1 ? new int[] { j1, i1 } : new int[] { i1, j1 };
+        }
     }
 }

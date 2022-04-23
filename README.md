@@ -11,8 +11,7 @@ For data structure, we only look at worst-case time complexity.
 | [Circular-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/CircularLinkedList/CircularLinkedList.cs) | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
 | [Singly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/List/SinglyLinkedList/SinglyLinkedList.cs) | O(n)      | O(n) | O(n)   | O(n)   |
 [Hash Map](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/HashMap/HashMap.cs) | O(n)      | O(n) | O(n)   | O(n)   |
-| Max Heap   |           |              |        |        |
-| Min Heap   |           |              |        |        |
+| [Min Heap](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Heap/MinHeap/MinHeap.cs)  |      O(log(n))     |      O(log(n))        |    O(n)    |        |
 | [AVL](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/AVL/AVL.cs) | O(log(n))      | O(log(n)) | O(log(n))   |    |
 [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
 | B-Tree   |           |              |        |        |
