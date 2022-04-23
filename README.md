@@ -14,7 +14,7 @@ For data structure, we only look at worst-case time complexity.
 | Max Heap   |           |              |        |        |
 | Min Heap   |           |              |        |        |
 | AVL        |           |              |        |        |
-| Binary Search Tree |           |              |        |        |
+[Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
 | B-Tree   |           |              |        |        |
 | B+ Tree  |           |              |        |        |
 | Red-Black Tree |           |              |        |        |
@@ -38,7 +38,7 @@ For data structure, we only look at worst-case time complexity.
 | -------------------- | ---- | ------- | ----- |
 | [Linear(Array)](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/Linear/Linear.cs)      |   O(1)   |    O(n)     |   O(n)    |
 | [Binary Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearch/BinarySearch.cs)        |    O(1)  |    O(Log(n))     |    O(Log(n))    |
-| Binary Tree Search   |      |         |       |
+|  [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearchTree/BinarySearchTree.cs)  |   Θ(log(n))   |    Θ(n)     |   Θ(n)      |
 | Breadth-First Search |      |         |       |
 | Depth-First Search   |      |         |       |
 | A*                   |      |         |       |
