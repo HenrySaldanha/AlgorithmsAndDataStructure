@@ -30,7 +30,7 @@ For data structure, we only look at worst-case time complexity.
 | [Bubble Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/BubbleSort/BubbleSort.cs) | O(n)      | O(n^2) | O(n^2)   |
 | [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
 | [Selection Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/SelectionSort/SelectionSort.cs) | O(n^2)   |   O(n^2)      |    O(n^2)    |  
-| Radix sort     |      |         |       | 
+[Radix Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/RadixSort/RadixSort.cs) | O(n+k)   |   O(n+k)      |    O(n+k)    |  
 
 ## Search Algorithms
 
@@ -38,7 +38,7 @@ For data structure, we only look at worst-case time complexity.
 | -------------------- | ---- | ------- | ----- |
 | [Linear(Array)](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/Linear/Linear.cs)      |   O(1)   |    O(n)     |   O(n)    |
 | [Binary Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearch/BinarySearch.cs)        |    O(1)  |    O(Log(n))     |    O(Log(n))    |
-|  [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearchTree/BinarySearchTree.cs)  |   O(log(n))   |    O(n)     |   O(n)      |
+| [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearchTree/BinarySearchTree.cs)  |   O(log(n))   |    O(n)     |   O(n)      |
 | Breadth-First Search |      |         |       |
 | Depth-First Search   |      |         |       |
 | A*                   |      |         |       |

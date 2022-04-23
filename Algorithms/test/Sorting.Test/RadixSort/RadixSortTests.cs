@@ -1,8 +1,8 @@
-﻿using Sorting.SelectionSort;
+﻿using Sorting.RadixSort;
 using System.Linq;
 using Xunit;
 
-namespace Sorting.Test.SelectionSort
+namespace Sorting.Test.RadixSort
 {
     public class RadixSortTests
     {
@@ -10,7 +10,7 @@ namespace Sorting.Test.SelectionSort
         public void Order_ClutteredData_OrderData()
         {
             //Arrange
-            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, -1, 530, 221, 12, 33, 1540, -230 };
+            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, 2, 530, 221, 12, 33, 1540, 111 };
 
             //Act
             array.Order();
@@ -26,7 +26,7 @@ namespace Sorting.Test.SelectionSort
         public void Order_SortedData_MustKeepOrderly()
         {
             //Arrange
-            var array = new int[] { -230, -1, 0, 1, 4, 5, 10, 12, 17, 33, 200, 221, 530, 663, 1540 };
+            var array = new int[] { 1, 2, 4, 5, 10, 12, 17, 33, 111, 200, 221, 530, 663, 1540 };
 
             //Act
             array.Order();
@@ -55,7 +55,7 @@ namespace Sorting.Test.SelectionSort
         public void OrderDesc_ClutteredData_OrderData()
         {
             //Arrange
-            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, -1, 530, 221, 12, 33, 1540, -230 };
+            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, 2, 530, 221, 12, 33, 1540, 111 };
 
             //Act 
             array.OrderDesc();
@@ -71,7 +71,7 @@ namespace Sorting.Test.SelectionSort
         public void OrderDesc_SortedData_MustKeepOrderly()
         {
             //Arrange
-            var array = new int[] { 1540, 663, 530, 221, 200, 33, 17, 12, 10, 5, 4, 1, 0, -1, -230 };
+            var array = new int[] { 1540, 663, 530, 221, 200, 111, 33, 17, 12, 10, 5, 4, 2, 1, 0 };
 
             //Act
             array.OrderDesc();
