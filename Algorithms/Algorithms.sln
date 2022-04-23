@@ -5,19 +5,23 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E164EB0F-7AED-41BA-91B9-C69A1734531F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure", "src\DataStructure\DataStructure.csproj", "{3A4233D5-F542-42F6-AEA0-D51ED1B91F9A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructure", "src\DataStructure\DataStructure.csproj", "{3A4233D5-F542-42F6-AEA0-D51ED1B91F9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting", "src\Sorting\Sorting.csproj", "{357F3444-8112-4351-BB57-F78711E884EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting", "src\Sorting\Sorting.csproj", "{357F3444-8112-4351-BB57-F78711E884EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "src\Search\Search.csproj", "{3826FE52-1D62-4275-9A62-38C6397C5A83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search", "src\Search\Search.csproj", "{3826FE52-1D62-4275-9A62-38C6397C5A83}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F1B46CB6-286B-4736-B297-0B9EE4DFE491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search.Test", "test\Search.Test\Search.Test.csproj", "{5478319F-E018-4F86-9846-7139B270B7ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Search.Test", "test\Search.Test\Search.Test.csproj", "{5478319F-E018-4F86-9846-7139B270B7ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sorting.Test", "test\Sorting.Test\Sorting.Test.csproj", "{86EB84F1-CDF8-4A7E-8903-F9C33A26B03C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting.Test", "test\Sorting.Test\Sorting.Test.csproj", "{86EB84F1-CDF8-4A7E-8903-F9C33A26B03C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure.Test", "test\DataStructure.Test\DataStructure.Test.csproj", "{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructure.Test", "test\DataStructure.Test\DataStructure.Test.csproj", "{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems", "src\Problems\Problems.csproj", "{DE30FAF7-A84E-478A-B136-FDE07E1677BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.Test", "Problems.Test\Problems.Test.csproj", "{702FFC36-5106-4581-8DCE-9F0DF398FB6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +53,14 @@ Global
 		{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE30FAF7-A84E-478A-B136-FDE07E1677BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE30FAF7-A84E-478A-B136-FDE07E1677BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE30FAF7-A84E-478A-B136-FDE07E1677BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE30FAF7-A84E-478A-B136-FDE07E1677BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702FFC36-5106-4581-8DCE-9F0DF398FB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702FFC36-5106-4581-8DCE-9F0DF398FB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702FFC36-5106-4581-8DCE-9F0DF398FB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702FFC36-5106-4581-8DCE-9F0DF398FB6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +72,8 @@ Global
 		{5478319F-E018-4F86-9846-7139B270B7ED} = {F1B46CB6-286B-4736-B297-0B9EE4DFE491}
 		{86EB84F1-CDF8-4A7E-8903-F9C33A26B03C} = {F1B46CB6-286B-4736-B297-0B9EE4DFE491}
 		{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE} = {F1B46CB6-286B-4736-B297-0B9EE4DFE491}
+		{DE30FAF7-A84E-478A-B136-FDE07E1677BA} = {E164EB0F-7AED-41BA-91B9-C69A1734531F}
+		{702FFC36-5106-4581-8DCE-9F0DF398FB6D} = {F1B46CB6-286B-4736-B297-0B9EE4DFE491}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1F379144-6DF5-4C1B-827E-2FF93919BDC1}
