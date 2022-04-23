@@ -2,10 +2,10 @@
 {
     public static class SelectionSort
     {
-
         public static void Order(this int[] array, int iniIndex = 0)
         {
-            if (array == null || array.Length <= 1 || iniIndex >= array.Length - 1) return;
+            if (array is null || array.Length <= 1 || iniIndex >= array.Length - 1)
+                return;
 
             var minValueIndex = iniIndex;
 
@@ -24,7 +24,7 @@
 
         public static void OrderDesc(this int[] array, int iniIndex = 0)
         {
-            if (array == null || array.Length <= 1 || iniIndex >= array.Length - 1) return;
+            if (array is null || array.Length <= 1 || iniIndex >= array.Length - 1) return;
 
             var maxValueIndex = iniIndex;
 

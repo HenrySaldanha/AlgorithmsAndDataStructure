@@ -11,13 +11,12 @@ namespace Search.BinarySearchTree
 
         private static BinarySearchTreeNode Search(int value, BinarySearchTreeNode node)
         {
-            if (node == null)
+            if (node is null)
                 return null;
 
             if (node.Value == value)
                 return node;
-
-            if (value < node.Value)
+            else if (value < node.Value)
                 return Search(value, node.LeftNode);
             else
                 return Search(value, node.RightNode);

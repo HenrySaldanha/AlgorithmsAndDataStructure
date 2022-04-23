@@ -6,7 +6,7 @@
 
         public BinarySearchTree Add(int value)
         {
-            if (Root == null)
+            if (Root is null)
                 Root = new BinarySearchTreeNode(value);
             else
                 AddLeaf(Root, value);
@@ -40,17 +40,23 @@
 
         private BinarySearchTreeNode Remove(BinarySearchTreeNode parent, int value)
         {
-            if (parent == null) return parent;
+            if (parent is null)
+                return parent;
 
             if (value < parent.Value)
+            {
                 parent.LeftNode = Remove(parent.LeftNode, value);
+            }
+
             else if (value > parent.Value)
+            {
                 parent.RightNode = Remove(parent.RightNode, value);
+            }
             else
             {
-                if (parent.LeftNode == null)
+                if (parent.LeftNode is null)
                     return parent.RightNode;
-                else if (parent.RightNode == null)
+                else if (parent.RightNode is null)
                     return parent.LeftNode;
 
                 parent.Value = MinValue(parent.RightNode);
@@ -63,7 +69,7 @@
 
         private int MinValue(BinarySearchTreeNode node)
         {
-            if (node.LeftNode == null)
+            if (node.LeftNode is null)
                 return node.Value;
 
             return MinValue(node.LeftNode);

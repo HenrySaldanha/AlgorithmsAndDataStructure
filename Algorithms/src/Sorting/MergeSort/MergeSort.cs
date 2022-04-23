@@ -35,7 +35,6 @@
             for (int j = 0; j < right_array.Length; j++)
                 right_array[j] = array[middle + j + 1];
 
-
             var leftIndex = 0;
             var rightIndex = 0;
             var arrayIndex = iniIndex;

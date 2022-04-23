@@ -1,9 +1,9 @@
-﻿using Algorithms.Search.BinarySearch;
+﻿using Search.FibonacciSearch;
 using Xunit;
 
-namespace Search.Test.BinarySearch
+namespace Search.Test.FibonacciSearch
 {
-    public class BinarySearchTests
+    public class FibonacciSearchTests
     {
         [Theory]
         [InlineData(-10)]
@@ -25,7 +25,7 @@ namespace Search.Test.BinarySearch
         [InlineData(-50)]
         [InlineData(10)]
         [InlineData(60000)]
-        public void HasValue_InvalidKey_MustNotExists(int key)
+        public void Exists_InvalidKey_MustNotExists(int key)
         {
             //Arrange
             var array = new int[] { -10, 1, 2, 3, 4, 5, 123, 1234, 2345, 4567, 12331, 44567 };

@@ -2,7 +2,7 @@
 {
     public static class BinarySearch
     {
-        public static bool Exists(this int[] array, int itemValue, int? ini = null, int? end = null)
+        public static bool HasValue(this int[] array, int itemValue, int? ini = null, int? end = null)
         {
             ini ??= 0;
             end ??= array.Length - 1;
@@ -14,11 +14,10 @@
 
             if (array[middle.Value] == itemValue)
                 return true;
-
-            if (array[middle.Value] > itemValue)
-                return Exists(array, itemValue, ini, middle - 1);
+            else if (array[middle.Value] > itemValue)
+                return HasValue(array, itemValue, ini, middle - 1);
             else
-                return Exists(array, itemValue, middle + 1, end);
+                return HasValue(array, itemValue, middle + 1, end);
         }
     }
 }

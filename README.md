@@ -42,10 +42,9 @@ For data structure, we only look at worst-case time complexity.
 | Breadth-First Search |      |         |       |
 | Depth-First Search   |      |         |       |
 | A*                   |      |         |       |
-| Hash search          |      |         |       |
 | Predictive Search    |      |         |       |
 | Interpolation Search |      |         |
-| Fibonacci Search     |      |         |       |
+| [Fibonacci Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/FibonacciSearch/FibonacciSearch.cs)      |   O(1)   |    O(log(n))     |   O(log(n))    |
 | Kruskal's Algorithm  |      |         |       |
 | Prim's Algorithm     |      |         |       |
 | Dijkstra's Algorithm |      |         |       |

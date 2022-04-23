@@ -4,12 +4,13 @@
     {
         public static void Order(this int[] array, int ini = 0, int? end = null)
         {
-            if (array == null || array.Length <= 1 || ini > end) return;
+            if (array is null || array.Length <= 1 || ini > end)
+                return;
 
-            if (end == null)
+            if (end is null)
                 end = array.Length - 1;
 
-            var pivot = array[(ini+end.Value)/2];
+            var pivot = array[(ini + end.Value) / 2];
             var iniIndex = ini;
             var endIndex = end.Value;
 
@@ -38,9 +39,10 @@
 
         public static void OrderDesc(this int[] array, int ini = 0, int? end = null)
         {
-            if (array == null || array.Length <= 1 || ini > end) return;
+            if (array is null || array.Length <= 1 || ini > end)
+                return;
 
-            if (end == null)
+            if (end is null)
                 end = array.Length - 1;
 
             var pivot = array[(ini + end.Value) / 2];

@@ -4,10 +4,10 @@
     {
         public static void Order(this int[] array, int? n = null)
         {
-            if (n <= 1) 
+            if (n <= 1)
                 return;
 
-            if (n == null) 
+            if (n is null)
                 n = array.Length;
 
             var swapped = false;
@@ -31,10 +31,10 @@
 
         public static void OrderDesc(this int[] array, int? n = null)
         {
-            if (n <= 1) 
+            if (n <= 1)
                 return;
 
-            if (n == null) 
+            if (n is null)
                 n = array.Length;
 
             var swapped = false;
