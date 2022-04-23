@@ -13,7 +13,7 @@ For data structure, we only look at worst-case time complexity.
 [Hash Map](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/HashMap/HashMap.cs) | O(n)      | O(n) | O(n)   | O(n)   |
 | Max Heap   |           |              |        |        |
 | Min Heap   |           |              |        |        |
-| [AVL] (https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/AVL/AVL.cs) | O(log(n))      | O(log(n)) | O(log(n))   |    |
+| [AVL](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/AVL/AVL.cs) | O(log(n))      | O(log(n)) | O(log(n))   |    |
 [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
 | B-Tree   |           |              |        |        |
 | B+ Tree  |           |              |        |        |
