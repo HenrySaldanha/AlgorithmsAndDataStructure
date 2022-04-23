@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Search.BinarySearchTree;
+using Xunit;
 
 namespace Search.Test.BinarySearchTree
 {

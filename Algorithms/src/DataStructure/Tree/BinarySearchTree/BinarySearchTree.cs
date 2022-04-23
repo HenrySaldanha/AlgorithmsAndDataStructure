@@ -68,24 +68,5 @@
 
             return MinValue(node.LeftNode);
         }
-
-        public bool HasValue(int value)
-        {
-            return Search(value, Root) != null;
-        }
-
-        private BinarySearchTreeNode Search(int value, BinarySearchTreeNode node)
-        {
-            if (node == null)
-                return null;
-
-            if (node.Value == value)
-                return node;
-
-            if (value < node.Value)
-                return Search(value, node.LeftNode);
-            else
-                return Search(value, node.RightNode);
-        }
     }
 }
