@@ -75,7 +75,7 @@
 
             temp.NextNode = temp.NextNode.NextNode;
 
-            if (temp.NextNode != null && temp != FirstNode)
+            if (temp.NextNode is not null && temp != FirstNode)
                 temp.LastNode = temp;
 
             Size--;

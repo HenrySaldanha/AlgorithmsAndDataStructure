@@ -20,7 +20,8 @@
 
             Heap[Size] = item;
 
-            for (var i = Size; i >= 0 && Heap[i] < Heap[ParentIndex(i)]; i--)
+            var i = Size;
+            while (i != 0 && Heap[i] < Heap[ParentIndex(i)])
             {
                 Swap(ref Heap[i], ref Heap[ParentIndex(i)]);
                 i = ParentIndex(i);
@@ -36,7 +37,9 @@
             ExtractMin();
         }
 
-        public void MinHeapify(int key)
+        public int? GetMin() => Heap[0];
+
+        private void MinHeapify(int key)
         {
             var left = LeftIndex(key);
             var right = RightIndex(key);
@@ -44,8 +47,8 @@
 
             if (left < Size && Heap[left] < Heap[smallest])
                 smallest = left;
-            
-            if (right < Size &&Heap[right] < Heap[smallest])
+
+            if (right < Size && Heap[right] < Heap[smallest])
                 smallest = right;
 
             if (smallest != key)
@@ -55,7 +58,7 @@
             }
         }
 
-        public void DecreaseKey(int key, int new_val)
+        private void DecreaseKey(int key, int new_val)
         {
             Heap[key] = new_val;
 
@@ -66,7 +69,7 @@
             }
         }
 
-        public int ExtractMin()
+        private int ExtractMin()
         {
             if (Size <= 0)
                 return int.MaxValue;
@@ -87,14 +90,14 @@
             return root.Value;
         }
 
-        public static void Swap(ref int? a, ref int? b)
+        private static void Swap(ref int? a, ref int? b)
         {
             var temp = a;
             a = b;
             b = temp;
         }
         private int ParentIndex(int keyIndex) => (keyIndex - 1) / 2;
-        public int LeftIndex(int keyIndex) => 2 * keyIndex + 1;
-        public int RightIndex(int keyIndex) => 2 * keyIndex + 2;
+        private int LeftIndex(int keyIndex) => 2 * keyIndex + 1;
+        private int RightIndex(int keyIndex) => 2 * keyIndex + 2;
     }
 }

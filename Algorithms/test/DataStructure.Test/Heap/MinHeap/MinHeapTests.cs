@@ -52,5 +52,32 @@ namespace DataStructure.Test.Heap.MinHeap
             Assert.Equal(7, heap.Heap[1]);
             Assert.Equal(8, heap.Heap[2]);
         }
+
+        [Fact]
+        public void GetMin_ReturnValue()
+        {
+            //Arrange
+            var heap = new DataStructure.Heap.MinHeap.MinHeap(3);
+            heap.Add(3).Add(8).Add(1);
+
+            //Act
+            var min = heap.GetMin();
+
+            //Assert
+            Assert.Equal(1, min);
+        }
+
+        [Fact]
+        public void GetMin_ReturnNull()
+        {
+            //Arrange
+            var heap = new DataStructure.Heap.MinHeap.MinHeap(3);
+
+            //Act
+            var min = heap.GetMin();
+
+            //Assert
+            Assert.Null(min);
+        }
     }
 }

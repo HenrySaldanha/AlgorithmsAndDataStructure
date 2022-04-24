@@ -11,7 +11,8 @@
             if (node is null || node.Key is null || node.Value is null)
                 return this;
 
-            if (Get(node.Key) != null) return this;
+            if (Get(node.Key) is not null) 
+                return this;
 
             if (LimitSize == 0)
                 LimitSize = 16;

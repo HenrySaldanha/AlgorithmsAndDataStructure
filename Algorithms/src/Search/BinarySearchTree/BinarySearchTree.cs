@@ -6,7 +6,7 @@ namespace Search.BinarySearchTree
     {
         public static bool HasValue(this DataStructure.Tree.BinarySearchTree.BinarySearchTree Tree, int value)
         {
-            return Search(value, Tree.Root) != null;
+            return Search(value, Tree.Root) is not null;
         }
 
         private static BinarySearchTreeNode Search(int value, BinarySearchTreeNode node)
