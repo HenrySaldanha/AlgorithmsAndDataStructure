@@ -25,7 +25,7 @@ For data structure, we only look at worst-case time complexity.
 | -------------- | ---- | ------- | ----- |
 | [Quick Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/QuickSort/QuickSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n^2)   | 
 | [Mergesort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/MergeSort/MergeSort.cs)     |   O(n*log(n))    |    O(n*log(n))     |    O(n*log(n))   | 
-| [Heapsort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/Heapsort/Heapsort.cs)      |  O(n*log(n))    |   O(n*log(n))      |   O(n*log(n))    |       |
+| [Heapsort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/HeapSort/HeapSort.cs)      |  O(n*log(n))    |   O(n*log(n))      |   O(n*log(n))    |       |
 | [Bubble Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/BubbleSort/BubbleSort.cs) | O(n)      | O(n^2) | O(n^2)   |
 | [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
 | [Selection Sort](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Sorting/SelectionSort/SelectionSort.cs) | O(n^2)   |   O(n^2)      |    O(n^2)    |  
