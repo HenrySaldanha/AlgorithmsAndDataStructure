@@ -19,9 +19,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sorting.Test", "test\Sortin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataStructure.Test", "test\DataStructure.Test\DataStructure.Test.csproj", "{5AD4E6DB-35DE-48F3-B051-22C01E2EF8AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems", "src\Problems\Problems.csproj", "{DE30FAF7-A84E-478A-B136-FDE07E1677BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems", "src\Problems\Problems.csproj", "{DE30FAF7-A84E-478A-B136-FDE07E1677BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems.Test", "test\Problems.Test\Problems.Test.csproj", "{B7FF8B58-3376-4C53-A311-E9EF425F1363}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Problems.Test", "test\Problems.Test\Problems.Test.csproj", "{B7FF8B58-3376-4C53-A311-E9EF425F1363}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A1FCD62B-C433-4998-A352-4DC1AD094A93}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
