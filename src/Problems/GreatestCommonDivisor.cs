@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Problems
+﻿namespace Problems
 {
-
     /// <summary>
     /// Greatest Common Divisor: It is the highest number that completely divides two or more numbers. 
     /// It is abbreviated for GCD. It is also known as the Greatest Common Factor (GCF) and the Highest Common Factor (HCF). 

@@ -1,14 +1,15 @@
 ﻿namespace Problems
 {
-    ///<summary>
+    /// <summary>
     /// Given a string s, find the length of the longest substring without repeating characters.
-    ///</summary>
+    /// </summary>
 
-    ///<example>
+    /// <example>
     /// Input: s = "abcabcbb"
     /// Output: 3
     /// Explanation: The answer is "abc", with the length of 3.
-    ///</example>
+    /// </example>
+
     public class LongestSubstringWithoutRepeatingCharacters
     {
         public int SolutionA(string s)
