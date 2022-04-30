@@ -5,7 +5,7 @@ namespace Search.DepthFirstSearch
     public class DepthFirstSearch 
     {
         public AdjacencyListWeightless GraphStructure { get; private set; }
-        public bool[] Visited { get; set; }
+        public bool[] Visited { get; private set; }
 
         public DepthFirstSearch(AdjacencyListWeightless graph)
         {

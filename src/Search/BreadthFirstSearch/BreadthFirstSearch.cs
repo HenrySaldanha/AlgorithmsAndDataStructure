@@ -5,7 +5,7 @@ namespace Search.BreadthFirstSearch
     public class BreadthFirstSearch
     {
         public AdjacencyListWeightless GraphStructure { get; private set; }
-        public int[] Level { get; set; }
+        public int[] Level { get; private set; }
 
         public BreadthFirstSearch(AdjacencyListWeightless graph)
         {

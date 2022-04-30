@@ -17,10 +17,10 @@
 
         }
 
-        private int MaxSize { get; set; }
-        public List<int>[] Graph { get; set; }
+        private int MaxSize { get;  set; }
+        public List<int>[] Graph { get; private set; }
         private bool[] Visited { get; set; }
-        public int[] Level { get; set; }
+        public int[] Level { get; private set; }
 
         public AdjacencyListWeightless AddEdge(int from, int to)
         {
