@@ -5,7 +5,6 @@ namespace DataStructure.Test.Graph
 {
     public class AdjacencyMatrixWeightlessTests
     {
-
         [Fact]
         public void AddEdge_ValidEdge_MustAdd()
         {
