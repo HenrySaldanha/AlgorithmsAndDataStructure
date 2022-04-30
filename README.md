@@ -38,8 +38,8 @@ For data structure, we only look at worst-case time complexity.
 | [Linear(Array)](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/Linear/Linear.cs)      |   O(1)   |    O(n)     |   O(n)    |
 | [Binary Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearch/BinarySearch.cs)        |    O(1)  |    O(Log(n))     |    O(Log(n))    |
 | [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BinarySearchTree/BinarySearchTree.cs)  |   O(log(n))   |    O(n)     |   O(n)      |
-| Breadth-First Search |      |         |       |
-| Depth-First Search   |      |         |       |
+| [Breadth-First Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/BreadthFirstSearch/BreadthFirstSearch.cs) |    |     O(V+E)     |      |
+| [Depth-First Search](https://github.com/HenrySaldanha/algorithms/blob/main/Algorithms/src/Search/DepthFirstSearch/DepthFirstSearch.cs)   |        |     O(V+E)     |      |
 | A*                   |      |         |       |
 | Predictive Search    |      |         |       |
 | Interpolation Search |      |         |
