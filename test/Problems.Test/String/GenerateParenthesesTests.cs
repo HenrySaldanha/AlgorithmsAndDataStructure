@@ -19,7 +19,7 @@ namespace Problems.Test.String
             var response = solution.SolutionA(n);
 
             //Assert
-            Assert.True(responseExpected.Except(response).Count() == 0);
+            Assert.Empty(responseExpected.Except(response));
         }
     }
 }
