@@ -11,13 +11,13 @@ namespace Problems.Test.String
         [InlineData("pwwkew", 3)]
         [InlineData("", 0)]
         [InlineData(" ", 1)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string array, int responseExpected)
+        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string s, int responseExpected)
         {
             //Arrange
             var solution = new LongestSubstringWithoutRepeatingCharacters();
 
             //Act
-            var response = solution.SolutionA(array);
+            var response = solution.SolutionA(s);
 
             //Assert
             Assert.Equal(responseExpected, response);
@@ -29,13 +29,13 @@ namespace Problems.Test.String
         [InlineData("pwwkew", 3)]
         [InlineData("", 0)]
         [InlineData(" ", 1)]
-        public void SolutionB_ValidInput_MustReturnCorrectAnswer(string array, int responseExpected)
+        public void SolutionB_ValidInput_MustReturnCorrectAnswer(string s, int responseExpected)
         {
             //Arrange
             var solution = new LongestSubstringWithoutRepeatingCharacters();
 
             //Act
-            var response = solution.SolutionB(array);
+            var response = solution.SolutionB(s);
 
             //Assert
             Assert.Equal(responseExpected, response);

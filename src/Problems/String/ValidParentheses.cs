@@ -13,6 +13,7 @@
     /// Input: s = "(]"
     /// Output: false
     /// </example>
+    
     public class ValidParentheses
     {
         public bool SolutionA(string s)
