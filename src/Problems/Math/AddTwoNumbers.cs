@@ -32,17 +32,17 @@
             ListNode pointerResult = null;
             var carry = 0;
 
-            while (l1 != null || l2 != null)
+            while (l1 is not null || l2 is not null)
             {
                 var sum = 0;
 
-                if (l1 != null)
+                if (l1 is not null)
                 {
                     sum += l1.val;
                     l1 = l1.next;
                 }
 
-                if (l2 != null)
+                if (l2 is not null)
                 {
                     sum += l2.val;
                     l2 = l2.next;
@@ -51,7 +51,7 @@
                 sum += carry;
                 carry = sum / 10;
 
-                if (result == null)
+                if (result is null)
                 {
                     result = new ListNode(sum >= 10 ? sum - 10 : sum);
                     pointerResult = result;
