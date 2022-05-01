@@ -1,6 +1,7 @@
-﻿using Xunit;
+﻿using Problems.Math;
+using Xunit;
 
-namespace Problems.Test
+namespace Problems.Test.Math
 {
     public class AddTwoNumbersTests
     {

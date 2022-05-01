@@ -1,7 +1,7 @@
-using System;
+using Problems.Array;
 using Xunit;
 
-namespace Problems.Test
+namespace Problems.Test.Array
 {
     public class MedianOfTwoSortedArraysTests
     {
@@ -21,7 +21,7 @@ namespace Problems.Test
             var solution = new MedianOfTwoSortedArrays();
 
             //Act
-            var response = solution.SolutionA(array1 ?? Array.Empty<int>(), array2);
+            var response = solution.SolutionA(array1 ?? System.Array.Empty<int>(), array2);
 
             //Assert
             Assert.Equal(answer, response);

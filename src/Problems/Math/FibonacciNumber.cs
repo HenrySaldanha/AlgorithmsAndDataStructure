@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Math
 {
     /// <summary>
     /// The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, 

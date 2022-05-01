@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Array
 {
     /// <summary>
     /// You are given an integer array height of length n. There are n vertical lines drawn 

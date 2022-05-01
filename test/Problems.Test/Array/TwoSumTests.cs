@@ -1,6 +1,7 @@
+using Problems.Array;
 using Xunit;
 
-namespace Problems.Test
+namespace Problems.Test.Array
 {
     public class TwoSumTests
     {

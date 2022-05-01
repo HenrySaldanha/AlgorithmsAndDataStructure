@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Math
 {
     /// <summary>
     /// Greatest Common Divisor: It is the highest number that completely divides two or more numbers. 

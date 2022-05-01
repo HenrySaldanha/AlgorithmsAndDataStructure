@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.String
 {
     /// <summary>
     /// Given a string s, find the length of the longest substring without repeating characters.

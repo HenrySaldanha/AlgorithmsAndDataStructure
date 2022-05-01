@@ -1,6 +1,8 @@
-﻿using Xunit;
+﻿using Problems.Math;
+using Problems.String;
+using Xunit;
 
-namespace Problems.Test
+namespace Problems.Test.String
 {
     public class LongestSubstringWithoutRepeatingCharactersTests
     {

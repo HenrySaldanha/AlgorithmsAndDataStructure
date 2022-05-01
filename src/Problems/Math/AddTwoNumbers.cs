@@ -1,4 +1,4 @@
-﻿namespace Problems
+﻿namespace Problems.Math
 {
     /// <summary>
     /// You are given two non-empty linked lists representing two non-negative integers. 
