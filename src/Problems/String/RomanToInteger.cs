@@ -1,5 +1,16 @@
 ﻿namespace Problems.String
 {
+    /// <summary>
+    /// Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M
+    /// Given a roman numeral, convert it to an integer.
+    /// </summary>
+
+    /// <example>
+    /// Input: s = "LVIII"
+    /// Output: 58
+    /// Explanation: L = 50, V= 5, III = 3.
+    /// </example>
+
     public class RomanToInteger
     {
         private Dictionary<char, int> RomanNumbers { get; set; }
