@@ -24,7 +24,7 @@
             for (int i = a.Length - 1; i >= 0; i--)
             {
                 var bValue = (bIndex >= 0) ? b[bIndex] : '0';
-
+               
                 (var sum, carry) = Sum(a[i], bValue, carry);
 
                 response = sum + response;
