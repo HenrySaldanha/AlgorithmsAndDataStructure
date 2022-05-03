@@ -16,7 +16,7 @@ namespace Problems.Test.String
             var solution = new GenerateParentheses();
 
             //Act
-            var response = solution.SolutionA(n);
+            var response = solution.Solution(n);
 
             //Assert
             Assert.Empty(responseExpected.Except(response));

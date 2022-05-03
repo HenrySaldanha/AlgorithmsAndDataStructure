@@ -17,7 +17,7 @@
 
     public class ContainsDuplicate
     {
-        public bool SolutionA(int[] nums)
+        public bool Solution(int[] nums)
         {
             var frequency = new HashSet<int>();
 

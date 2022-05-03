@@ -24,7 +24,7 @@ namespace Problems.Test.Array
             };
 
             //Act
-            var response = solution.SolutionA(input);
+            var response = solution.Solution(input);
 
             //Assert
             Assert.True(response);
@@ -49,7 +49,7 @@ namespace Problems.Test.Array
             };
 
             //Act
-            var response = solution.SolutionA(input);
+            var response = solution.Solution(input);
 
             //Assert
             Assert.False(response);

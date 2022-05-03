@@ -15,12 +15,12 @@
 
     public class GreatestCommonDivisor
     {
-        public object SolutionA(int a, int b)
+        public object Solution(int a, int b)
         {
             if (b == 0)
                 return a;
 
-            return SolutionA(b, a % b);
+            return Solution(b, a % b);
         }
     }
 }

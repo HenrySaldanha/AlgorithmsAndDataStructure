@@ -19,7 +19,7 @@ namespace Problems.Test.Math
             var rootB = new AddTwoNumbers.ListNode(5, nodeB1);
 
             //Act
-            var response = solution.SolutionA(rootA, rootB);
+            var response = solution.Solution(rootA, rootB);
 
             //Assert
             Assert.Equal(7, response.val);

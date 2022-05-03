@@ -15,7 +15,7 @@ namespace Problems.Test.Array
             var solution = new SearchInRotatedSortedArray();
 
             //Act
-            var response = solution.SolutionA(numbers, remove);
+            var response = solution.Solution(numbers, remove);
 
             //Assert
             Assert.Equal(answer, response);

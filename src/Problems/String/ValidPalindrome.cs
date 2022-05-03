@@ -18,7 +18,7 @@
 
     public class ValidPalindrome
     {
-        public bool SolutionA(string s)
+        public bool Solution(string s)
         {
             var left = 0;
             var right = s.Length - 1;

@@ -21,7 +21,7 @@ namespace Problems.Test.Array
             var solution = new MedianOfTwoSortedArrays();
 
             //Act
-            var response = solution.SolutionA(array1 ?? System.Array.Empty<int>(), array2);
+            var response = solution.Solution(array1 ?? System.Array.Empty<int>(), array2);
 
             //Assert
             Assert.Equal(answer, response);

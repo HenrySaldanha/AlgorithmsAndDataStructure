@@ -12,7 +12,7 @@
 
     public class MedianOfTwoSortedArrays
     {
-        public double SolutionA(int[] nums1, int[] nums2)
+        public double Solution(int[] nums1, int[] nums2)
         {
             var index1 = 0;
             var index2 = 0;

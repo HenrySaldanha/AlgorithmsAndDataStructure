@@ -14,7 +14,7 @@ namespace Problems.Test.String
             var solution = new AddBinary();
 
             //Act
-            var response = solution.SolutionA(a,b);
+            var response = solution.Solution(a,b);
 
             //Assert
             Assert.Equal(responseExpected, response);

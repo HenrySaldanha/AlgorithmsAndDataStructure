@@ -16,7 +16,7 @@
    
     public class ContainerWithMostWater
     {
-        public int SolutionA(int[] height)
+        public int Solution(int[] height)
         {
             var ini = 0;
             var end = height.Length - 1;

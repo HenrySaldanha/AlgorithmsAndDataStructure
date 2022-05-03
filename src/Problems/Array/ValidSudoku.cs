@@ -39,7 +39,7 @@
 
     public class ValidSudoku
     {
-        public bool SolutionA(char[,] board)
+        public bool Solution(char[,] board)
         {
             var rowSet = new HashSet<string>();
             var colSet = new HashSet<string>();

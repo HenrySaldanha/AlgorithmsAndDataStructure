@@ -16,7 +16,7 @@ namespace Problems.Test
             var solution = new GreatestCommonDivisor();
 
             //Act
-            var response = solution.SolutionA(a, b);
+            var response = solution.Solution(a, b);
 
             //Assert
             Assert.Equal(answer, response);

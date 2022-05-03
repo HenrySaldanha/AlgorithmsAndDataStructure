@@ -17,7 +17,7 @@
 
     public class ValidAnagram
     {
-        public bool SolutionA(string s, string t)
+        public bool Solution(string s, string t)
         {
             var charactersSet = new Dictionary<char, int>();
 

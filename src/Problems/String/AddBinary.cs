@@ -11,12 +11,12 @@
     
     public class AddBinary
     {
-        public string SolutionA(string a, string b)
+        public string Solution(string a, string b)
         {
             var response = "";
 
             if (a.Length < b.Length)
-                return SolutionA(b, a);
+                return Solution(b, a);
 
             var bIndex = b.Length - 1;
             var carry = '0';

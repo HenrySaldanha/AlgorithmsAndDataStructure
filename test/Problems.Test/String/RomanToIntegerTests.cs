@@ -15,7 +15,7 @@ namespace Problems.Test.String
             var solution = new RomanToInteger();
 
             //Act
-            var response = solution.SolutionA(array);
+            var response = solution.Solution(array);
 
             //Assert
             Assert.Equal(responseExpected, response);

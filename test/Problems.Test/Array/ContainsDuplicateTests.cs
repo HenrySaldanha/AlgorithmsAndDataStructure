@@ -14,7 +14,7 @@ namespace Problems.Test.Array
             var solution = new ContainsDuplicate();
 
             //Act
-            var response = solution.SolutionA(numbers);
+            var response = solution.Solution(numbers);
 
             //Assert
             Assert.Equal(answer, response);

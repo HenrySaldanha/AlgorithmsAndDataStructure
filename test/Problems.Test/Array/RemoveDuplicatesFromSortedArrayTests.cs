@@ -36,6 +36,5 @@ namespace Problems.Test.Array
             //Assert
             Assert.Equal(answer, response);
         }
-
     }
 }

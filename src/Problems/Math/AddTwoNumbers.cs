@@ -26,7 +26,7 @@
             }
         }
 
-        public ListNode SolutionA(ListNode l1, ListNode l2)
+        public ListNode Solution(ListNode l1, ListNode l2)
         {
             ListNode result = null;
             ListNode pointerResult = null;

@@ -15,7 +15,7 @@
     {
         private Dictionary<char, int> RomanNumbers { get; set; }
 
-        public int SolutionA(string s)
+        public int Solution(string s)
         {
             var sum = 0;
             RomanNumbers = new Dictionary<char, int>()

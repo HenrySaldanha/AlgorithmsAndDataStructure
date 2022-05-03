@@ -14,7 +14,7 @@ namespace Problems.Test.String
             var solution = new ValidPalindrome();
 
             //Act
-            var response = solution.SolutionA(input);
+            var response = solution.Solution(input);
 
             //Assert
             Assert.Equal(responseExpected, response);

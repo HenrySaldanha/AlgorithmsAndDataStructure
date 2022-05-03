@@ -11,7 +11,7 @@
 
     public class GenerateParentheses
     {
-        public IEnumerable<string> SolutionA(int n)
+        public IEnumerable<string> Solution(int n)
         {
             var response = new List<string>();
             Backtrack(response,"", 0, 0, n);
@@ -38,6 +38,5 @@
                 Backtrack(response, currentValue, open, close + 1, n);
             }
         }
-
     }
 }

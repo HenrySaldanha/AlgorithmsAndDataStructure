@@ -16,7 +16,7 @@ namespace Problems.Test.String
             var solution = new ValidParentheses();
 
             //Act
-            var response = solution.SolutionA(array);
+            var response = solution.Solution(array);
 
             //Assert
             Assert.Equal(responseExpected, response);

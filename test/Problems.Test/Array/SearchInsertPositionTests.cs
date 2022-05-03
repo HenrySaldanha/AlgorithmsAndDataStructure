@@ -15,7 +15,7 @@ namespace Problems.Test.Array
             var solution = new SearchInsertPosition();
 
             //Act
-            var response = solution.SolutionA(array, target);
+            var response = solution.Solution(array, target);
 
             //Assert
             Assert.Equal(answer, response);

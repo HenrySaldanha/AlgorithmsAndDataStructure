@@ -15,7 +15,7 @@ namespace Problems.Test.Array
             var solution = new ContainerWithMostWater();
 
             //Act
-            var response = solution.SolutionA(heights);
+            var response = solution.Solution(heights);
 
             //Assert
             Assert.Equal(answer, response);

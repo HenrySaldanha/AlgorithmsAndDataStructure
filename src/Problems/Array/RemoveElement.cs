@@ -21,7 +21,7 @@
 
     public class RemoveElement
     {
-        public int SolutionA(int[] nums, int remove)
+        public int Solution(int[] nums, int remove)
         {
             var k = 0;
             for (var i = 0; i < nums.Length; i++)

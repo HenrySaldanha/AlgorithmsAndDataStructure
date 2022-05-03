@@ -16,7 +16,7 @@
     
     public class ValidParentheses
     {
-        public bool SolutionA(string s)
+        public bool Solution(string s)
         {
             var stack = new Stack<char>();
             for (var i = 0; i < s.Length; i++)

@@ -20,7 +20,7 @@
     /// </example>
     public class SearchInRotatedSortedArray
     {
-        public int SolutionA(int[] nums, int target)
+        public int Solution(int[] nums, int target)
         {
             if (nums.Length == 1 && target != nums[0])
                 return -1;

@@ -18,7 +18,7 @@
 
     public class SearchInsertPosition
     {
-        public int SolutionA(int[] nums, int target)
+        public int Solution(int[] nums, int target)
         {
             return BinarySearch(nums, 0, nums.Length - 1, target);
         }
