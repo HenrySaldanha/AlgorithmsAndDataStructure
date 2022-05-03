@@ -37,7 +37,6 @@ namespace DataStructure.Test.HashMap
             Assert.Equal(1, hashMap.Size);
         }
 
-
         [Fact]
         public void Add_FifteenValidItems_MustAdd()
         {

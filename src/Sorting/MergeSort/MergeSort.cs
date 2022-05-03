@@ -21,7 +21,6 @@
                 MergeSortOrder(array, middle + 1, endIndex, asc);
                 Merge(array, iniIndex, middle, endIndex, asc);
             }
-
         }
 
         private static void Merge(int[] array, int iniIndex, int middle, int endIndex, bool asc)

@@ -6,10 +6,10 @@ namespace Problems.Test.String
     public class ValidParenthesesTests
     {
         [Theory]
-       // [InlineData("()", true)]
+        [InlineData("()", true)]
         [InlineData("[()]{}", true)]
-        //[InlineData("{]", false)]
-       // [InlineData("{]()", false)]
+        [InlineData("{]", false)]
+        [InlineData("{]()", false)]
         public void SolutionA_ValidInput_MustReturnCorrectAnswer(string array, bool responseExpected)
         {
             //Arrange
