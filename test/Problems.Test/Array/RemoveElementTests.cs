@@ -8,7 +8,7 @@ namespace Problems.Test.Array
         [Theory]
         [InlineData(new[] { 3, 2, 2, 3 }, 2, 2)]
         [InlineData(new[] { 0, 1, 2, 2, 3, 0, 4, 2 }, 2, 5)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int[] numbers, int remove, int answer)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(int[] numbers, int remove, int answer)
         {
             //Arrange
             var solution = new RemoveElement();

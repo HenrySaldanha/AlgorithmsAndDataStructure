@@ -8,7 +8,7 @@ namespace Problems.Test.String
         [Theory]
         [InlineData("A man, a plan, a canal: Panama", true)]
         [InlineData("race a car", false)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string input, bool responseExpected)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(string input, bool responseExpected)
         {
             //Arrange
             var solution = new ValidPalindrome();

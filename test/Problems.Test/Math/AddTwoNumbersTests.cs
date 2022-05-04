@@ -6,7 +6,7 @@ namespace Problems.Test.Math
     public class AddTwoNumbersTests
     {
         [Fact]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer()
+        public void Solution_ValidInput_MustReturnCorrectAnswer()
         {
             //Arrange
             var solution = new AddTwoNumbers();

@@ -10,7 +10,7 @@ namespace Problems.Test.String
         [InlineData(1, new[] { "()" })]
         [InlineData(2, new[] { "(())", "()()" })]
         [InlineData(3, new[] { "((()))", "(()())", "(())()", "()(())", "()()()" })]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int n, string[] responseExpected)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(int n, string[] responseExpected)
         {
             //Arrange
             var solution = new GenerateParentheses();

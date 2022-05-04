@@ -15,7 +15,7 @@ namespace Problems.Test.Array
         [InlineData(new[] { 2, 2, 4, 4 }, new[] { 2, 2, 4, 4 }, 3)]
         [InlineData(new[] { 1, 1 }, new[] { 1, 2 }, 1)]
         [InlineData(new[] { 1, 2 }, new[] { -1, 3 }, 1.5)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int[] array1, int[] array2, double answer)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(int[] array1, int[] array2, double answer)
         {
             //Arrange
             var solution = new MedianOfTwoSortedArrays();

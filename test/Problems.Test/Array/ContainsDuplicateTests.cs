@@ -8,7 +8,7 @@ namespace Problems.Test.Array
         [Theory]
         [InlineData(new[] { 1, 2, 3, 1 }, true)]
         [InlineData(new[] { 1, 2, 3, 4 }, false)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int[] numbers, bool answer)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(int[] numbers, bool answer)
         {
             //Arrange
             var solution = new ContainsDuplicate();

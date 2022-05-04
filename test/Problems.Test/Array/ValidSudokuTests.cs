@@ -6,7 +6,7 @@ namespace Problems.Test.Array
     public class ValidSudokuTests
     {
         [Fact]
-        public void SolutionA_ValidInput_MustReturnTrue()
+        public void Solution_ValidInput_MustReturnTrue()
         {
             //Arrange
             var solution = new ValidSudoku();
@@ -31,7 +31,7 @@ namespace Problems.Test.Array
         }
 
         [Fact]
-        public void SolutionA_InvalidInput_MustReturnFalse()
+        public void Solution_InvalidInput_MustReturnFalse()
         {
             //Arrange
             var solution = new ValidSudoku();

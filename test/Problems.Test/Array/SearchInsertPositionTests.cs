@@ -9,7 +9,7 @@ namespace Problems.Test.Array
         [InlineData(new[] { 1, 3, 5, 6 }, 5, 2)]
         [InlineData(new[] { 1, 3, 5, 6 }, 2, 1)]
         [InlineData(new[] { 1, 3, 5, 6 }, 7, 4)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int[] array, int target, int answer)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(int[] array, int target, int answer)
         {
             //Arrange
             var solution = new SearchInsertPosition();

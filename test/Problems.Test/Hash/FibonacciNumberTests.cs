@@ -1,7 +1,7 @@
-﻿using Problems.Math;
+﻿using Problems.Hash;
 using Xunit;
 
-namespace Problems.Test.Math
+namespace Problems.Test.Hash
 {
     public class FibonacciNumberTests
     {

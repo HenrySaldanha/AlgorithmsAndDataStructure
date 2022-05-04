@@ -8,7 +8,7 @@ namespace Problems.Test.String
         [Theory]
         [InlineData("11","1","100")]
         [InlineData("1010", "1011", "10101")]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string a, string b, string responseExpected)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(string a, string b, string responseExpected)
         {
             //Arrange
             var solution = new AddBinary();

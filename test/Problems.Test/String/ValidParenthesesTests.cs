@@ -10,7 +10,7 @@ namespace Problems.Test.String
         [InlineData("[()]{}", true)]
         [InlineData("{]", false)]
         [InlineData("{]()", false)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string array, bool responseExpected)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(string array, bool responseExpected)
         {
             //Arrange
             var solution = new ValidParentheses();

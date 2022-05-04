@@ -9,7 +9,7 @@ namespace Problems.Test.String
         [InlineData("III", 3)]
         [InlineData("IV", 4)]
         [InlineData("XIV", 14)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(string array, int responseExpected)
+        public void Solution_ValidInput_MustReturnCorrectAnswer(string array, int responseExpected)
         {
             //Arrange
             var solution = new RomanToInteger();
