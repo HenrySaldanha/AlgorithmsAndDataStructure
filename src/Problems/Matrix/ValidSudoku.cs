@@ -1,4 +1,4 @@
-﻿namespace Problems.Array
+﻿namespace Problems.Matrix
 {
     /// <summary>
     /// Determine if a 9 x 9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules:
@@ -43,7 +43,7 @@
         {
             var rowSet = new HashSet<string>();
             var colSet = new HashSet<string>();
-            var quadrant = new HashSet<string>();
+            var group = new HashSet<string>();
 
             for (var r = 0; r < board.GetLength(0); r++)
             {
@@ -54,12 +54,12 @@
 
                     if (rowSet.Contains($"{r} {board[r, c]}") ||
                         colSet.Contains($"{c} {board[r, c]}") ||
-                        quadrant.Contains($"{r / 3}{c / 3} {board[r, c]}"))
+                        group.Contains($"{r / 3}{c / 3} {board[r, c]}"))
                         return false;
 
                     rowSet.Add($"{r} {board[r, c]}");
                     colSet.Add($"{c} {board[r, c]}");
-                    quadrant.Add($"{r / 3}{c / 3} {board[r, c]}");
+                    group.Add($"{r / 3}{c / 3} {board[r, c]}");
                 }
             }
 

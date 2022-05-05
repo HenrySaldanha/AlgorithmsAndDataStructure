@@ -1,7 +1,7 @@
-﻿using Problems.Array;
+﻿using Problems.Matrix;
 using Xunit;
 
-namespace Problems.Test.Array
+namespace Problems.Test.Matrix
 {
     public class ValidSudokuTests
     {
