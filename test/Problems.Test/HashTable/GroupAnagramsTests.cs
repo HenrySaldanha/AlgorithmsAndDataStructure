@@ -1,7 +1,7 @@
-﻿using Problems.Hash;
+﻿using Problems.HashTable;
 using Xunit;
 
-namespace Problems.Test.Hash
+namespace Problems.Test.HashTable
 {
     public class GroupAnagramsTests
     {
