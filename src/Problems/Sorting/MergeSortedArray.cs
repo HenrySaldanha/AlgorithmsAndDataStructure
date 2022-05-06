@@ -18,6 +18,7 @@
     /// Input: nums1 = [1], m = 1, nums2 = [], n = 0
     /// Output: [1]
     /// </example>
+    
     public class MergeSortedArray
     {
         public void Solution(int[] nums1, int m, int[] nums2, int n)
