@@ -1,4 +1,11 @@
-This repository has the objective of presenting examples of: data structure, search algorithms, sorting algorithms and their respective complexities in the worst case.
+This repository has the objective of presenting examples of data structure, search algorithms, sorting algorithms, and their respective complexities in the worst case. 
+
+To apply the concepts of the topics above, I created a project called "problems", in this project I solve problems of the [leetcode](https://leetcode.com/) platform. The explanation of each problem is in the solution itself. You can find them by accessing the root of the solution and `/src/problems`
+
+For most of the code I also developed the unit tests, you can find them by accessing the root of the solution and `/test`.
+
+This repository is under construction so some algorithms mentioned in the tables may be missing from the solution
+
 
 ## Data Structures
 
@@ -10,10 +17,10 @@ For data structure, we only look at worst-case time complexity.
 | [Doubly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/List/DoublyLinkedList/DoublyLinkedList.cs)       | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
 | [Circular-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/List/CircularLinkedList/CircularLinkedList.cs) | O(1)      | O(1) or O(n) | O(n)   | O(n)   |
 | [Singly-Linked List](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/List/SinglyLinkedList/SinglyLinkedList.cs) | O(n)      | O(n) | O(n)   | O(n)   |
-[Hash Map](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/HashMap/HashMap.cs) | O(n)      | O(n) | O(n)   | O(n)   |
+| [Hash Map](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/HashMap/HashMap.cs) | O(n)      | O(n) | O(n)   | O(n)   |
 | [Min Heap](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Heap/MinHeap/MinHeap.cs)  |      O(log(n))     |      O(log(n))        |    O(n)    |        |
 | [AVL](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Tree/AVL/AVL.cs) | O(log(n))      | O(log(n)) | O(log(n))   |    |
-[Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
+| [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
 | B-Tree   |           |              |        |        |
 | B+ Tree  |           |              |        |        |
 | Red-Black Tree |           |              |        |        |
@@ -29,7 +36,7 @@ For data structure, we only look at worst-case time complexity.
 | [Bubble Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/BubbleSort/BubbleSort.cs) | O(n)      | O(n^2) | O(n^2)   |
 | [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
 | [Selection Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/SelectionSort/SelectionSort.cs) | O(n^2)   |   O(n^2)      |    O(n^2)    |  
-[Radix Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/RadixSort/RadixSort.cs) | O(n+k)   |   O(n+k)      |    O(n+k)    |  
+| [Radix Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/RadixSort/RadixSort.cs) | O(n+k)   |   O(n+k)      |    O(n+k)    |  
 
 ## Search Algorithms
 
@@ -47,3 +54,13 @@ For data structure, we only look at worst-case time complexity.
 | Kruskal's Algorithm  |      |         |       |
 | Prim's Algorithm     |      |         |       |
 | Dijkstra's Algorithm |      |         |       |
+
+
+## This project was built with
+* [xUnit](https://xunit.net/)
+* [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* ~~coffee, pizza and late nights~~
+
+## My contacts
+* [LinkedIn](https://www.linkedin.com/in/henry-saldanha-3b930b98/)
+* [LeetCode](https://leetcode.com/user5265z/)
