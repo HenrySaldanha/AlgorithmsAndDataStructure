@@ -27,6 +27,8 @@
 
         public void SolutionB(int[] nums, int k)
         {
+            k = k % nums.Length;
+
             var left = 0;
             var right = nums.Length-1;
 

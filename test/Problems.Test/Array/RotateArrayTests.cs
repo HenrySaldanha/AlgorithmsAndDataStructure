@@ -27,6 +27,7 @@ namespace Problems.Test.Array
         [Theory]
         [InlineData(new[] { 1, 2, 3, 4, 5, 6, 7 }, new[] { 5, 6, 7, 1, 2, 3, 4 }, 3)]
         [InlineData(new[] { -1, -100, 3, 99 }, new[] { 3, 99, -1, -100 }, 2)]
+        [InlineData(new[] { -1, -100, 3, 99 }, new[] { 3, 99, -1, -100 }, 6)]
         public void SolutionB_ValidInput_MustReturnCorrectAnswer(int[] input, int[] response, int k)
         {
             //Arrange
