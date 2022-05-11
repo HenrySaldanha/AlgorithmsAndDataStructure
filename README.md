@@ -37,6 +37,7 @@ For data structure, we only look at worst-case time complexity.
 | [Insertion Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/InsertionSort/InsertionSort.cs) |  O(n)    |   O(n^2)      |    O(n^2)    |  
 | [Selection Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/SelectionSort/SelectionSort.cs) | O(n^2)   |   O(n^2)      |    O(n^2)    |  
 | [Radix Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/RadixSort/RadixSort.cs) | O(n+k)   |   O(n+k)      |    O(n+k)    |  
+| [Counting Sort](https://github.com/HenrySaldanha/algorithms/blob/main/src/Sorting/CountingSort/CountingSort.cs) | O(n+k)   |   O(n+k)      |    O(n+k)    |  
 
 ## Search Algorithms
 
