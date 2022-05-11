@@ -1,15 +1,15 @@
 ﻿namespace Problems.DepthFirstSearch
 {
     /// <summary>
-    /// Given the root of a binary tree, return the inorder traversal of its nodes' values.
+    /// Given the root of a binary tree, return the preorder traversal of its nodes' values.
     /// </summary>
 
     /// <example>
     /// Input: root = [1,null,2,3]
-    /// Output: [1,3,2]
+    /// Output: [1,2,3]
     /// </example>
-   
-    public class BinaryTreeInorderTraversal
+
+    public class BinaryTreePreorderTraversal
     {
         public IList<int> Solution(TreeNode root)
         {
@@ -23,8 +23,8 @@
             if (root is null)
                 return;
 
-            Dfs(root.left, list);
             list.Add(root.val);
+            Dfs(root.left, list);
             Dfs(root.right, list);
         }
 
