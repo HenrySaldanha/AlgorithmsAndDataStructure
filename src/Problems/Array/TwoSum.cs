@@ -27,12 +27,7 @@
                 var complement = target - nums[i];
 
                 if (dict.ContainsKey(complement))
-                {
-                    var res = dict[complement];
-
-                    if (res != i)
-                        return new[] { res, i };
-                }
+                    return new[] { dict[complement], i };
 
                 dict[nums[i]] = i;
 
