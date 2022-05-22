@@ -1,4 +1,4 @@
-﻿namespace Algorithms.Search.Linear
+﻿namespace Search.Linear
 {
     public static class Linear
     {

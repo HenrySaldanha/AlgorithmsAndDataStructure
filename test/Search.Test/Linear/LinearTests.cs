@@ -1,4 +1,4 @@
-﻿using Algorithms.Search.Linear;
+﻿using Search.Linear;
 using Xunit;
 
 namespace Search.Test.Linear

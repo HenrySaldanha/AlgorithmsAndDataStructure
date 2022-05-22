@@ -7,8 +7,7 @@
             if (array is null || array.Length <= 1 || ini > end)
                 return;
 
-            if (end is null)
-                end = array.Length - 1;
+            end ??= array.Length - 1;
 
             var pivot = array[(ini + end.Value) / 2];
             var iniIndex = ini;
@@ -17,14 +16,17 @@
             while (iniIndex <= endIndex)
             {
                 if (array[iniIndex] <= pivot)
+                {
                     iniIndex++;
+                }
                 else if (array[endIndex] > pivot)
+                {
                     endIndex--;
+                }
                 else
                 {
-                    var swap = array[endIndex];
-                    array[endIndex] = array[iniIndex];
-                    array[iniIndex] = swap;
+                    (array[endIndex], array[iniIndex]) = (array[iniIndex], array[endIndex]);
+                    
                     iniIndex++;
                     endIndex--;
                 }
@@ -52,14 +54,16 @@
             while (iniIndex <= endIndex)
             {
                 if (array[iniIndex] >= pivot)
+                {
                     iniIndex++;
+                }
                 else if (array[endIndex] < pivot)
+                {
                     endIndex--;
+                }
                 else
                 {
-                    var swap = array[endIndex];
-                    array[endIndex] = array[iniIndex];
-                    array[iniIndex] = swap;
+                    (array[endIndex], array[iniIndex]) = (array[iniIndex], array[endIndex]);
                     iniIndex++;
                     endIndex--;
                 }

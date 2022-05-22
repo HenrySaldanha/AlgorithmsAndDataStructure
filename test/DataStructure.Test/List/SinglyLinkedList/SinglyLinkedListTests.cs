@@ -1,5 +1,5 @@
 ﻿using Xunit;
-using Algorithms.DataStructure.List.SinglyLinkedList;
+using DataStructure.List.SinglyLinkedList;
 
 namespace DataStructure.Test.List.SinglyLinkedList
 {

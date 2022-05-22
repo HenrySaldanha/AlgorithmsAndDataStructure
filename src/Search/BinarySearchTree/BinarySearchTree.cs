@@ -4,9 +4,9 @@ namespace Search.BinarySearchTree
 {
     public static class BinarySearchTree
     {
-        public static bool HasValue(this DataStructure.Tree.BinarySearchTree.BinarySearchTree Tree, int value)
+        public static bool HasValue(this DataStructure.Tree.BinarySearchTree.BinarySearchTree tree, int value)
         {
-            return Search(value, Tree.Root) is not null;
+            return Search(value, tree.Root) is not null;
         }
 
         private static BinarySearchTreeNode Search(int value, BinarySearchTreeNode node)
@@ -16,7 +16,8 @@ namespace Search.BinarySearchTree
 
             if (node.Value == value)
                 return node;
-            else if (value < node.Value)
+            
+            if (value < node.Value)
                 return Search(value, node.LeftNode);
             else
                 return Search(value, node.RightNode);

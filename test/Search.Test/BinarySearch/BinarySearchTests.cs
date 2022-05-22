@@ -1,4 +1,4 @@
-﻿using Algorithms.Search.BinarySearch;
+﻿using Search.BinarySearch;
 using Xunit;
 
 namespace Search.Test.BinarySearch

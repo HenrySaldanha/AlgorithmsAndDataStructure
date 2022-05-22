@@ -7,8 +7,7 @@
             if (n <= 1)
                 return;
 
-            if (n is null)
-                n = array.Length;
+            n ??= array.Length;
 
             var swapped = false;
 
@@ -16,9 +15,7 @@
             {
                 if (array[i] < array[i - 1])
                 {
-                    var swap = array[i];
-                    array[i] = array[i - 1];
-                    array[i - 1] = swap;
+                    (array[i], array[i - 1]) = (array[i - 1], array[i]);
                     swapped = true;
                 }
             }
@@ -34,8 +31,7 @@
             if (n <= 1)
                 return;
 
-            if (n is null)
-                n = array.Length;
+            n ??= array.Length;
 
             var swapped = false;
 
@@ -43,9 +39,7 @@
             {
                 if (array[i] > array[i - 1])
                 {
-                    var swap = array[i];
-                    array[i] = array[i - 1];
-                    array[i - 1] = swap;
+                    (array[i], array[i - 1]) = (array[i - 1], array[i]);
                     swapped = true;
                 }
             }

@@ -1,4 +1,4 @@
-﻿namespace Algorithms.DataStructure.List.SinglyLinkedList
+﻿namespace DataStructure.List.SinglyLinkedList
 {
     public class SinglyNode<T>
     {

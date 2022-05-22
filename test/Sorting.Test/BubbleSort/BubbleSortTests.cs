@@ -10,7 +10,7 @@ namespace Sorting.Test.BubbleSort
         public void Order_ClutteredData_OrderData()
         {
             //Arrange
-            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, -1, 530, 221, 12, 33, 1540, -230 };
+            var array = new [] { 663, 200, 0, 10, 17, 5, 1, 4, -1, 530, 221, 12, 33, 1540, -230 };
 
             //Act
             array.Order();
@@ -26,7 +26,7 @@ namespace Sorting.Test.BubbleSort
         public void Order_SortedData_MustKeepOrderly()
         {
             //Arrange
-            var array = new int[] { -230, -1, 0, 1, 4, 5, 10, 12, 17, 33, 200, 221, 530, 663, 1540 };
+            var array = new [] { -230, -1, 0, 1, 4, 5, 10, 12, 17, 33, 200, 221, 530, 663, 1540 };
 
             //Act
             array.Order();
@@ -55,7 +55,7 @@ namespace Sorting.Test.BubbleSort
         public void OrderDesc_ClutteredData_OrderData()
         {
             //Arrange
-            var array = new int[] { 663, 200, 0, 10, 17, 5, 1, 4, -1, 530, 221, 12, 33, 1540, -230 };
+            var array = new [] { -230, -1, 0, 1, 4, 5, 10, 12, 17, 33, 200, 221, 530, 663, 1540 };
 
             //Act
             array.OrderDesc();

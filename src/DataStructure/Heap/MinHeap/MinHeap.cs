@@ -2,7 +2,7 @@
 {
     public class MinHeap
     {
-        public int Capacity { get; private set; }
+        private int Capacity { get; set; }
         public int?[] Heap { get; private set; }
         public int Size { get; private set; }
 
@@ -58,9 +58,9 @@
             }
         }
 
-        private void DecreaseKey(int key, int new_val)
+        private void DecreaseKey(int key, int newValue)
         {
-            Heap[key] = new_val;
+            Heap[key] = newValue;
 
             while (key != 0 && Heap[key] < Heap[ParentIndex(key)])
             {

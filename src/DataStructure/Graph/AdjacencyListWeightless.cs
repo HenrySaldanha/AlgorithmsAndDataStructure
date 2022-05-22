@@ -9,7 +9,7 @@
             Visited = new bool[MaxSize];
             Level = new int[MaxSize];
 
-            for (int i = 0; i < MaxSize; i++)
+            for (var i = 0; i < MaxSize; i++)
             {
                 Graph[i] = new List<int>();
                 Level[i] = -1;
@@ -59,7 +59,6 @@
                         queue.Enqueue(item);
                     }
                 }
-
             }
         }
     }

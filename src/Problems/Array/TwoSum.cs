@@ -32,7 +32,7 @@
                 dict[nums[i]] = i;
 
             }
-            return new int[] { -1, -1 };
+            return new [] { -1, -1 };
         }
 
 
@@ -51,7 +51,7 @@
                 }
             }
 
-            return new int[] { -1, -1 };
+            return new [] { -1, -1 };
         }
 
         public int[] SolutionC(int[] nums, int target)
@@ -72,7 +72,7 @@
                 });
             });
 
-            return j1 < i1 ? new int[] { j1, i1 } : new int[] { i1, j1 };
+            return j1 < i1 ? new [] { j1, i1 } : new [] { i1, j1 };
         }
     }
 }

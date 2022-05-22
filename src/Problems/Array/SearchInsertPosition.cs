@@ -33,7 +33,7 @@
             if (nums[middle] == target)
                 return middle;
 
-            else if (target < nums[middle])
+            if (target < nums[middle])
                 return BinarySearch(nums, ini, middle - 1, target);
             else
                 return BinarySearch(nums, middle + 1, end, target);

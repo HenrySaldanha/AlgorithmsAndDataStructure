@@ -15,9 +15,7 @@
                     minValueIndex = i;
             }
 
-            var swap = array[minValueIndex];
-            array[minValueIndex] = array[iniIndex];
-            array[iniIndex] = swap;
+            (array[minValueIndex], array[iniIndex]) = (array[iniIndex], array[minValueIndex]);
 
             Order(array, iniIndex + 1);
         }
@@ -34,9 +32,7 @@
                     maxValueIndex = i;
             }
 
-            var swap = array[maxValueIndex];
-            array[maxValueIndex] = array[iniIndex];
-            array[iniIndex] = swap;
+            (array[maxValueIndex], array[iniIndex]) = (array[iniIndex], array[maxValueIndex]);
 
             OrderDesc(array, iniIndex + 1);
         }

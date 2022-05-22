@@ -25,46 +25,46 @@
 
         private static void Merge(int[] array, int iniIndex, int middle, int endIndex, bool asc)
         {
-            var left_array = new int[middle - iniIndex + 1];
-            var right_array = new int[endIndex - middle];
+            var leftArray = new int[middle - iniIndex + 1];
+            var rightArray = new int[endIndex - middle];
 
-            for (int i = 0; i < left_array.Length; i++)
-                left_array[i] = array[iniIndex + i];
+            for (int i = 0; i < leftArray.Length; i++)
+                leftArray[i] = array[iniIndex + i];
 
-            for (int j = 0; j < right_array.Length; j++)
-                right_array[j] = array[middle + j + 1];
+            for (int j = 0; j < rightArray.Length; j++)
+                rightArray[j] = array[middle + j + 1];
 
             var leftIndex = 0;
             var rightIndex = 0;
             var arrayIndex = iniIndex;
 
-            while (leftIndex < left_array.Length && rightIndex < right_array.Length)
+            while (leftIndex < leftArray.Length && rightIndex < rightArray.Length)
             {
-                if ((left_array[leftIndex] < right_array[rightIndex] && asc) ||
-                    (left_array[leftIndex] > right_array[rightIndex] && !asc))
+                if ((leftArray[leftIndex] < rightArray[rightIndex] && asc) ||
+                    (leftArray[leftIndex] > rightArray[rightIndex] && !asc))
                 {
-                    array[arrayIndex] = left_array[leftIndex];
+                    array[arrayIndex] = leftArray[leftIndex];
                     leftIndex++;
                 }
                 else
                 {
-                    array[arrayIndex] = right_array[rightIndex];
+                    array[arrayIndex] = rightArray[rightIndex];
                     rightIndex++;
                 }
 
                 arrayIndex++;
             }
 
-            while (leftIndex < left_array.Length)
+            while (leftIndex < leftArray.Length)
             {
-                array[arrayIndex] = left_array[leftIndex];
+                array[arrayIndex] = leftArray[leftIndex];
                 leftIndex++;
                 arrayIndex++;
             }
 
-            while (rightIndex < right_array.Length)
+            while (rightIndex < rightArray.Length)
             {
-                array[arrayIndex] = right_array[rightIndex];
+                array[arrayIndex] = rightArray[rightIndex];
                 rightIndex++;
                 arrayIndex++;
             }

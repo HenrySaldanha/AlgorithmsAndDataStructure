@@ -23,10 +23,9 @@
                 int i = Min(rangeEliminated + fibonacciFirstValue, size - 1);
 
                 if (array[i] == valueSearch)
-                {
                     return true;
-                }
-                else if (array[i] < valueSearch)
+                
+                if (array[i] < valueSearch)
                 {
                     fibonacciThirdValue = fibonacciSecondValue;
                     fibonacciSecondValue = fibonacciFirstValue;

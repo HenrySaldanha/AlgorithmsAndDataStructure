@@ -2,7 +2,6 @@
 {
     public static class RadixSort
     {
-
         public static void Order(this int[] array)
         {
             if (array.Length == 0) 

@@ -1,7 +1,7 @@
-using Algorithms.DataStructure.Array;
+using DataStructure.Array;
 using Xunit;
 
-namespace DataStructure.Array.Test
+namespace DataStructure.Test.Array
 {
     public class SimpleArrayTests
     {

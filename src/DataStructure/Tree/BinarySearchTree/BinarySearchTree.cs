@@ -56,7 +56,7 @@
             {
                 if (parent.LeftNode is null)
                     return parent.RightNode;
-                else if (parent.RightNode is null)
+                if (parent.RightNode is null)
                     return parent.LeftNode;
 
                 parent.Value = MinValue(parent.RightNode);

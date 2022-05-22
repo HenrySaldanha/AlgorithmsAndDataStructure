@@ -1,4 +1,4 @@
-﻿namespace Algorithms.DataStructure.Array
+﻿namespace DataStructure.Array
 {
     public class SimpleArray<T>
     {

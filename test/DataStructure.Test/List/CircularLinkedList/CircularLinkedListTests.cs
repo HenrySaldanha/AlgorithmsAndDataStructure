@@ -1,4 +1,4 @@
-﻿using Algorithms.DataStructure.List.CircularLinkedList;
+﻿using DataStructure.List.CircularLinkedList;
 using Xunit;
 
 namespace DataStructure.Test.List.CircularLinkedList

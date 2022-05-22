@@ -4,7 +4,7 @@
     {
         public static void OrderDesc(this int[] array)
         {
-            for (int i = 1; i < array.Length; i++)
+            for (var i = 1; i < array.Length; i++)
             {
                 var key = array[i];
                 var j = i - 1;
@@ -20,7 +20,7 @@
 
         public static void Order(this int[] array)
         {
-            for (int i = 1; i < array.Length; i++)
+            for (var i = 1; i < array.Length; i++)
             {
                 var key = array[i];
                 var j = i - 1;
