@@ -18,7 +18,7 @@
         public void SolutionA(int[] nums, int k)
         {
             var copyNums = new int[nums.Length];
-            for (int i = 0; i < nums.Length; i++)
+            for (var i = 0; i < nums.Length; i++)
                 copyNums[i] = nums[i];
 
             for (var i = 0; i  < nums.Length; i++)
@@ -58,6 +58,7 @@
             }
         }
 
-        private void Swap(int[] nums, int i, int j) => (nums[j], nums[i]) = (nums[i], nums[j]);
+        private void Swap(int[] nums, int i, int j) => 
+            (nums[j], nums[i]) = (nums[i], nums[j]);
     }
 }
