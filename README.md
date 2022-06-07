@@ -53,8 +53,8 @@ For data structure, we only look at worst-case time complexity.
 | Interpolation Search |      |         |
 | [Fibonacci Search](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/FibonacciSearch/FibonacciSearch.cs)      |   O(1)   |    O(log(n))     |   O(log(n))    |
 | Kruskal's Algorithm  |      |         |       |
-| Prim's Algorithm     |      |         |       |
-| Dijkstra's Algorithm |      |         |       |
+| [Prim's Algorithm](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/Prim/PrimAlgorithm.cs)   |    O(v^2)    |    O(v^2)     |   O(v^2)    |
+| [Dijkstra's Algorithm](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/Dijkstra/DijkstraAlgorithm.cs)   |    O(v^2)    |    O(v^2)     |   O(v^2)    |
 
 
 ## This project was built with
