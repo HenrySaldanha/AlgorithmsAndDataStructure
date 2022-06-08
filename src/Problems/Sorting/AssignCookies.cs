@@ -23,7 +23,7 @@
 
             var i = 0;
             var j = 0;
-            while(i < g.Length && j < s.Length)
+            while (i < g.Length && j < s.Length)
             {
                 if (g[i] <= s[j])
                     i++;
