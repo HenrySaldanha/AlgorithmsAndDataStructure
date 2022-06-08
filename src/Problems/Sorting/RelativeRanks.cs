@@ -16,7 +16,6 @@
     /// <example>
     /// Input: score = [5,4,3,2,1]
     /// Output: ["Gold Medal","Silver Medal","Bronze Medal","4","5"]
-    /// Explanation: The placements are [1st, 2nd, 3rd, 4th, 5th].
     /// </example>
 
     public class RelativeRanks
@@ -24,24 +23,18 @@
         public string[] Solution(int[] score)
         {
             var ret = new string[score.Length];
-            int[] numsCopy = (int[])score.Clone();
+            var orderScore = score.OrderByDescending(c=>c).ToList();
 
-            System.Array.Sort(numsCopy);
-
-            var al = numsCopy.ToList();
-            for (int i = score.Length - 1; i >= 0; i--)
-                al.Add(numsCopy[i]);
-
-            for (int i = 0; i < score.Length; i++)
+            for (var i = 0; i < score.Length; i++)
             {
-                if (score[i] == numsCopy[score.Length - 1])
+                if (score[i] == orderScore[0])
                     ret[i] = "Gold Medal";
-                else if (score[i] == numsCopy[score.Length - 2])
+                else if (score[i] == orderScore[1])
                     ret[i] = "Silver Medal";
-                else if (score[i] == numsCopy[score.Length - 3])
+                else if (score[i] == orderScore[2])
                     ret[i] = "Bronze Medal";
                 else 
-                    ret[i] = (al.IndexOf(score[i]) + 1).ToString();
+                    ret[i] = (orderScore.IndexOf(score[i]) + 1).ToString();
             }
             return ret;
         }
