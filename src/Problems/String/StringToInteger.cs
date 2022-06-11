@@ -1,5 +1,23 @@
 ﻿namespace Problems.String
 {
+    /// <summary>
+    /// Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+    /// </summary>
+
+    /// <example>
+    /// Input: s = "42"
+    /// Output: 42
+    /// </example>
+
+    /// <example>
+    /// Input: s = "   -42"
+    /// Output: -42
+    /// </example>
+
+    /// <example>
+    /// Input: s = "4193 with words"
+    /// Output: 4193
+    /// </example>
     public class StringToInteger
     {
         public int Solution(string s)
