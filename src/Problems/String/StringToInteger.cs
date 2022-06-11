@@ -23,9 +23,8 @@
         public int Solution(string s)
         {
             var i = 0;
+            var positive = true;
             long number = 0;
-            bool positive = true;
-
 
             while (i < s.Length && s[i] == ' ')
                 i++;

@@ -20,6 +20,7 @@
     /// Input: password = "Me+You--IsMyDream"
     /// Output: false
     /// </example>
+
     public class StrongPasswordCheckerII
     {
         public bool Solution(string password)
