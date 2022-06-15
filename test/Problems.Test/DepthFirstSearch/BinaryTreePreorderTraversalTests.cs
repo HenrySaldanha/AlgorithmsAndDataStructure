@@ -3,15 +3,15 @@ using Xunit;
 
 namespace Problems.Test.DepthFirstSearch
 {
-    public class BinaryTreePreorderTraversalTests
+    public class BinaryTreePreOrderTraversalTests
     {
         [Fact]
         public void Solution_ValidInput_MustReturnTrue()
         {
             //Arrange
-            var solution = new BinaryTreePreorderTraversal();
-            var tree = new BinaryTreePreorderTraversal.TreeNode(1, null,
-                new BinaryTreePreorderTraversal.TreeNode(2, new BinaryTreePreorderTraversal.TreeNode(3)));
+            var solution = new BinaryTreePreOrderTraversal();
+            var tree = new BinaryTreePreOrderTraversal.TreeNode(1, null,
+                new BinaryTreePreOrderTraversal.TreeNode(2, new BinaryTreePreOrderTraversal.TreeNode(3)));
 
             //Act
             var response = solution.Solution(tree);

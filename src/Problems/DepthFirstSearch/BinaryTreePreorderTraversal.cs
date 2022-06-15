@@ -9,7 +9,7 @@
     /// Output: [1,2,3]
     /// </example>
 
-    public class BinaryTreePreorderTraversal
+    public class BinaryTreePreOrderTraversal
     {
         public IList<int> Solution(TreeNode root)
         {

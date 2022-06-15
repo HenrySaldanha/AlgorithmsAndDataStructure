@@ -1,15 +1,15 @@
 ﻿namespace Problems.DepthFirstSearch
 {
     /// <summary>
-    /// Given the root of a binary tree, return the inorder traversal of its nodes' values.
+    /// Given the root of a binary tree, return the postorder traversal of its nodes' values.
     /// </summary>
 
     /// <example>
     /// Input: root = [1,null,2,3]
-    /// Output: [1,3,2]
+    /// Output: [3,2,1]
     /// </example>
-   
-    public class BinaryTreeInOrderTraversal
+
+    public class BinaryTreePostOrderTraversal
     {
         public IList<int> Solution(TreeNode root)
         {
@@ -24,8 +24,8 @@
                 return;
 
             Dfs(root.left, list);
-            list.Add(root.val);
             Dfs(root.right, list);
+            list.Add(root.val);
         }
 
         public class TreeNode
