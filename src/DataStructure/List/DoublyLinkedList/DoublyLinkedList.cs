@@ -1,146 +1,144 @@
-﻿namespace DataStructure.List.DoublyLinkedList
+﻿namespace DataStructure.List.DoublyLinkedList;
+public class DoublyLinkedList<T>
 {
-    public class DoublyLinkedList<T>
+    public DoublyNode<T> FirstNode { get; private set; }
+    public int Size { get; private set; }
+
+    public DoublyLinkedList<T> Add(DoublyNode<T> node)
     {
-        public DoublyNode<T> FirstNode { get; private set; }
-        public int Size { get; private set; }
+        if (node is null || node.Key is null)
+            return this;
 
-        public DoublyLinkedList<T> Add(DoublyNode<T> node)
+        node.NextNode = null;
+
+        if (FirstNode is null)
         {
-            if (node is null || node.Key is null)
-                return this;
-
-            node.NextNode = null;
-
-            if (FirstNode is null)
-            {
-                FirstNode = node;
-                Size++;
-                return this;
-            }
-
-            var temp = FirstNode;
-
-            while (temp.NextNode is not null)
-                temp = temp.NextNode;
-
-            temp.NextNode = node;
-            node.LastNode = temp;
-
+            FirstNode = node;
             Size++;
             return this;
         }
 
-        public DoublyNode<T> Search(int? key = null)
-        {
-            if (FirstNode is null)
-                return null;
+        var temp = FirstNode;
 
-            var temp = FirstNode;
+        while (temp.NextNode is not null)
+            temp = temp.NextNode;
 
-            for (var i = 0; i < Size; i++)
-            {
-                if (temp.Key.Equals(key))
-                    return temp;
+        temp.NextNode = node;
+        node.LastNode = temp;
 
-                temp = temp.NextNode;
-            }
+        Size++;
+        return this;
+    }
 
+    public DoublyNode<T> Search(int? key = null)
+    {
+        if (FirstNode is null)
             return null;
+
+        var temp = FirstNode;
+
+        for (var i = 0; i < Size; i++)
+        {
+            if (temp.Key.Equals(key))
+                return temp;
+
+            temp = temp.NextNode;
         }
 
-        public DoublyLinkedList<T> Remove(int? key = null)
+        return null;
+    }
+
+    public DoublyLinkedList<T> Remove(int? key = null)
+    {
+        if (FirstNode is null)
+            return this;
+
+        if (FirstNode.Key.Equals(key))
         {
-            if (FirstNode is null)
-                return this;
+            FirstNode = FirstNode.NextNode;
+            FirstNode.LastNode = null;
+            Size--;
+            return this;
+        }
 
-            if (FirstNode.Key.Equals(key))
-            {
-                FirstNode = FirstNode.NextNode;
-                FirstNode.LastNode = null;
-                Size--;
-                return this;
-            }
+        var temp = FirstNode;
+        var i = 0;
+        while (temp.NextNode is not null && !temp.NextNode.Key.Equals(key) && i < Size)
+        {
+            temp = temp.NextNode;
+            i++;
+        }
 
-            var temp = FirstNode;
-            var i = 0;
-            while (temp.NextNode is not null && !temp.NextNode.Key.Equals(key) && i < Size)
-            {
+        if (i >= Size || temp.NextNode is null)
+            return this;
+
+        temp.NextNode = temp.NextNode.NextNode;
+
+        if (temp.NextNode is not null && temp != FirstNode)
+            temp.LastNode = temp;
+
+        Size--;
+        return this;
+    }
+
+    public DoublyLinkedList<T> RemoveAt(int index)
+    {
+        if (FirstNode is null || index > Size - 1 || index < 0)
+            return this;
+
+        if (index == 0)
+        {
+            FirstNode = FirstNode.NextNode;
+            FirstNode.LastNode = null;
+            Size--;
+            return this;
+        }
+
+        var temp = FirstNode;
+
+        for (var i = 0; i < Size; i++)
+        {
+            if (i == index - 1)
+                i = Size;
+            else
                 temp = temp.NextNode;
-                i++;
-            }
+        }
 
-            if (i >= Size || temp.NextNode is null)
-                return this;
+        temp.NextNode = temp.NextNode.NextNode;
 
-            temp.NextNode = temp.NextNode.NextNode;
 
-            if (temp.NextNode is not null && temp != FirstNode)
+        if (temp.NextNode is not null)
+        {
+            if (temp != FirstNode)
                 temp.LastNode = temp;
 
-            Size--;
-            return this;
+            temp.NextNode.LastNode = temp;
         }
 
-        public DoublyLinkedList<T> RemoveAt(int index)
+
+        Size--;
+        return this;
+    }
+
+    public void Traverse()
+    {
+        if (FirstNode is null) return;
+
+        var temp = FirstNode;
+
+        while (temp.NextNode is not null)
         {
-            if (FirstNode is null || index > Size - 1 || index < 0)
-                return this;
-
-            if (index == 0)
-            {
-                FirstNode = FirstNode.NextNode;
-                FirstNode.LastNode = null;
-                Size--;
-                return this;
-            }
-
-            var temp = FirstNode;
-
-            for(var i = 0; i < Size; i++)
-            {
-                if (i == index - 1)
-                    i = Size;
-                else
-                    temp = temp.NextNode;
-            }
-
-            temp.NextNode = temp.NextNode.NextNode;
-
-
-            if (temp.NextNode is not null)
-            {
-                if (temp != FirstNode)
-                    temp.LastNode = temp;
-
-                temp.NextNode.LastNode = temp;
-            }
-
-
-            Size--;
-            return this;
+            Console.Write(temp.Key + " -> ");
+            temp = temp.NextNode;
         }
+        Console.WriteLine(temp.Key);
 
-        public void Traverse()
+        while (temp.LastNode is not null)
         {
-            if (FirstNode is null) return;
-
-            var temp = FirstNode;
-
-            while (temp.NextNode is not null)
-            {
-                Console.Write(temp.Key + " -> ");
-                temp = temp.NextNode;
-            }
-            Console.WriteLine(temp.Key);
-
-            while (temp.LastNode is not null)
-            {
-                Console.Write(temp.Key + " <- ");
-                temp = temp.LastNode;
-            }
-
-            Console.WriteLine(temp.Key);
+            Console.Write(temp.Key + " <- ");
+            temp = temp.LastNode;
         }
+
+        Console.WriteLine(temp.Key);
     }
 }

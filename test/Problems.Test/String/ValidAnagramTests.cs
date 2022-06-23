@@ -1,24 +1,23 @@
 ﻿using Problems.String;
 
-namespace Problems.Test.String
+namespace Problems.Test.String;
+
+public class ValidAnagramTests
 {
-    public class ValidAnagramTests
+    [Theory]
+    [InlineData("anagram", "nagaram", true)]
+    [InlineData("nagaram", "anagram", true)]
+    [InlineData("rat", "car", false)]
+    [InlineData("car", "rat", false)]
+    public void Solution_ValidInput_MustReturnCorrectAnswer(string a, string b, bool responseExpected)
     {
-        [Theory]
-        [InlineData("anagram", "nagaram", true)]
-        [InlineData("nagaram", "anagram", true)]
-        [InlineData("rat", "car", false)]
-        [InlineData("car", "rat", false)]
-        public void Solution_ValidInput_MustReturnCorrectAnswer(string a, string b, bool responseExpected)
-        {
-            //Arrange
-            var solution = new ValidAnagram();
+        //Arrange
+        var solution = new ValidAnagram();
 
-            //Act
-            var response = solution.Solution(a, b);
+        //Act
+        var response = solution.Solution(a, b);
 
-            //Assert
-            Assert.Equal(responseExpected, response);
-        }
+        //Assert
+        Assert.Equal(responseExpected, response);
     }
 }

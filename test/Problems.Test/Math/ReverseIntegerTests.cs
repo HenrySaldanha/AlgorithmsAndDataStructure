@@ -1,43 +1,42 @@
 ﻿using Problems.Math;
 
-namespace Problems.Test.Math
+namespace Problems.Test.Math;
+
+public class ReverseIntegerTests
 {
-    public class ReverseIntegerTests
+    [Theory]
+    [InlineData(6554, 4556)]
+    [InlineData(1111, 1111)]
+    [InlineData(1234, 4321)]
+    [InlineData(-123, -321)]
+    [InlineData(-2147483647, 0)]
+    public void SolutionA_ValidInput_MustReturnCorrectAnswer(int input, int answer)
     {
-        [Theory]
-        [InlineData(6554,4556)]
-        [InlineData(1111, 1111)]
-        [InlineData(1234, 4321)]
-        [InlineData(-123, -321)]
-        [InlineData(-2147483647, 0)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int input, int answer)
-        {
-            //Arrange
-            var solution = new ReverseInteger();
+        //Arrange
+        var solution = new ReverseInteger();
 
-            //Act
-            var response = solution.SolutionA(input);
+        //Act
+        var response = solution.SolutionA(input);
 
-            //Assert
-            Assert.Equal(answer, response);
-        }
+        //Assert
+        Assert.Equal(answer, response);
+    }
 
-        [Theory]
-        [InlineData(6554, 4556)]
-        [InlineData(1111, 1111)]
-        [InlineData(1234, 4321)]
-        [InlineData(-123, -321)]
-        [InlineData(-2147483647, 0)]
-        public void SolutionB_ValidInput_MustReturnCorrectAnswer(int input, int answer)
-        {
-            //Arrange
-            var solution = new ReverseInteger();
+    [Theory]
+    [InlineData(6554, 4556)]
+    [InlineData(1111, 1111)]
+    [InlineData(1234, 4321)]
+    [InlineData(-123, -321)]
+    [InlineData(-2147483647, 0)]
+    public void SolutionB_ValidInput_MustReturnCorrectAnswer(int input, int answer)
+    {
+        //Arrange
+        var solution = new ReverseInteger();
 
-            //Act
-            var response = solution.SolutionB(input);
+        //Act
+        var response = solution.SolutionB(input);
 
-            //Assert
-            Assert.Equal(answer, response);
-        }
+        //Assert
+        Assert.Equal(answer, response);
     }
 }

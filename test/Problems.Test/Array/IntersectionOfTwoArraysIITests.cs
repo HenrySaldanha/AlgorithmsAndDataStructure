@@ -1,37 +1,36 @@
 ﻿using Problems.Array;
 
-namespace Problems.Test.Array
+namespace Problems.Test.Array;
+
+public class IntersectionOfTwoArraysIITests
 {
-    public class IntersectionOfTwoArraysIITests
+    [Fact]
+    public void SolutionA_ValidInput_MustReturnCorrectAnswer()
     {
-        [Fact]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer()
-        {
-            //Arrange
-            var solution = new IntersectionOfTwoArraysII();
+        //Arrange
+        var solution = new IntersectionOfTwoArraysII();
 
-            //Act
-            var response = solution.SolutionA(new[] { 1, 2, 3 }, new[] { 1, 2 });
+        //Act
+        var response = solution.SolutionA(new[] { 1, 2, 3 }, new[] { 1, 2 });
 
-            //Assert
-            Assert.Equal(2, response.Length);
-            Assert.Equal(1, response[0]);
-            Assert.Equal(2, response[1]);
-        }
+        //Assert
+        Assert.Equal(2, response.Length);
+        Assert.Equal(1, response[0]);
+        Assert.Equal(2, response[1]);
+    }
 
-        [Fact]
-        public void SolutionB_ValidInput_MustReturnCorrectAnswer()
-        {
-            //Arrange
-            var solution = new IntersectionOfTwoArraysII();
+    [Fact]
+    public void SolutionB_ValidInput_MustReturnCorrectAnswer()
+    {
+        //Arrange
+        var solution = new IntersectionOfTwoArraysII();
 
-            //Act
-            var response = solution.SolutionB(new[] { 1, 2, 3 }, new[] { 1, 2 });
+        //Act
+        var response = solution.SolutionB(new[] { 1, 2, 3 }, new[] { 1, 2 });
 
-            //Assert
-            Assert.Equal(2, response.Length);
-            Assert.Equal(1, response[0]);
-            Assert.Equal(2, response[1]);
-        }
+        //Assert
+        Assert.Equal(2, response.Length);
+        Assert.Equal(1, response[0]);
+        Assert.Equal(2, response[1]);
     }
 }

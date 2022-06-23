@@ -1,23 +1,22 @@
 ﻿using Problems.HashTable;
 
-namespace Problems.Test.HashTable
+namespace Problems.Test.HashTable;
+
+public class RansomNoteTests
 {
-    public class RansomNoteTests
+    [Theory]
+    [InlineData("aa", "aab", true)]
+    [InlineData("ac", "abbc", true)]
+    [InlineData("abc", "bdc", false)]
+    public void Solution_ValidInput_MustReturnCorrectAnswer(string a, string b, bool responseExpected)
     {
-        [Theory]
-        [InlineData("aa", "aab", true)]
-        [InlineData("ac", "abbc", true)]
-        [InlineData("abc", "bdc", false)]
-        public void Solution_ValidInput_MustReturnCorrectAnswer(string a, string b, bool responseExpected)
-        {
-            //Arrange
-            var solution = new RansomNote();
+        //Arrange
+        var solution = new RansomNote();
 
-            //Act
-            var response = solution.Solution(a, b);
+        //Act
+        var response = solution.Solution(a, b);
 
-            //Assert
-            Assert.Equal(responseExpected, response);
-        }
+        //Assert
+        Assert.Equal(responseExpected, response);
     }
 }

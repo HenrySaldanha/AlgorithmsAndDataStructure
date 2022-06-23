@@ -1,24 +1,23 @@
 ﻿using Problems.String;
 
-namespace Problems.Test.String
+namespace Problems.Test.String;
+
+public class ValidParenthesesTests
 {
-    public class ValidParenthesesTests
+    [Theory]
+    [InlineData("()", true)]
+    [InlineData("[()]{}", true)]
+    [InlineData("{]", false)]
+    [InlineData("{]()", false)]
+    public void Solution_ValidInput_MustReturnCorrectAnswer(string array, bool responseExpected)
     {
-        [Theory]
-        [InlineData("()", true)]
-        [InlineData("[()]{}", true)]
-        [InlineData("{]", false)]
-        [InlineData("{]()", false)]
-        public void Solution_ValidInput_MustReturnCorrectAnswer(string array, bool responseExpected)
-        {
-            //Arrange
-            var solution = new ValidParentheses();
+        //Arrange
+        var solution = new ValidParentheses();
 
-            //Act
-            var response = solution.Solution(array);
+        //Act
+        var response = solution.Solution(array);
 
-            //Assert
-            Assert.Equal(responseExpected, response);
-        }
+        //Assert
+        Assert.Equal(responseExpected, response);
     }
 }

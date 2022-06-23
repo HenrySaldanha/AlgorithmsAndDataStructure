@@ -1,47 +1,45 @@
-﻿namespace Search.Dijkstra
+﻿namespace Search.Dijkstra;
+public static class DijkstraAlgorithm
 {
-    public static class DijkstraAlgorithm
+    public static Graph SearchShortestPathFromSource(this Graph graph, GraphNode source)
     {
-        public static Graph SearchShortestPathFromSource(this Graph graph, GraphNode source)
-        {
-            source.Distance = 0;
-            var visited = new HashSet<GraphNode>();
-            var unvisited = new HashSet<GraphNode> { source };
+        source.Distance = 0;
+        var visited = new HashSet<GraphNode>();
+        var unvisited = new HashSet<GraphNode> { source };
 
-            while (unvisited.Any())
+        while (unvisited.Any())
+        {
+            var currentNode = unvisited.GetMinimumDistanceNode();
+            unvisited.Remove(currentNode);
+            foreach (var (adjacentNode, edgeWeight) in currentNode.AdjacentNodes)
             {
-                var currentNode = unvisited.GetMinimumDistanceNode();
-                unvisited.Remove(currentNode);
-                foreach (var (adjacentNode, edgeWeight) in currentNode.AdjacentNodes)
+                if (!visited.Contains(adjacentNode))
                 {
-                    if (!visited.Contains(adjacentNode))
+                    if (currentNode.Distance + edgeWeight < adjacentNode.Distance)
                     {
-                        if (currentNode.Distance + edgeWeight < adjacentNode.Distance)
-                        {
-                            adjacentNode.Distance = currentNode.Distance + edgeWeight;
-                            adjacentNode.ShortestPath = new List<GraphNode>(currentNode.ShortestPath) { currentNode };
-                        }
-
-                        unvisited.Add(adjacentNode);
+                        adjacentNode.Distance = currentNode.Distance + edgeWeight;
+                        adjacentNode.ShortestPath = new List<GraphNode>(currentNode.ShortestPath) { currentNode };
                     }
+
+                    unvisited.Add(adjacentNode);
                 }
-
-                visited.Add(currentNode);
             }
 
-            return graph;
+            visited.Add(currentNode);
         }
 
-        private static GraphNode GetMinimumDistanceNode(this HashSet<GraphNode> unvisited)
+        return graph;
+    }
+
+    private static GraphNode GetMinimumDistanceNode(this HashSet<GraphNode> unvisited)
+    {
+        var lowestDistanceNode = new GraphNode("");
+        foreach (var node in unvisited)
         {
-            var lowestDistanceNode = new GraphNode("");
-            foreach (var node in unvisited)
-            {
-                if (node.Distance < lowestDistanceNode.Distance)
-                    lowestDistanceNode = node;
-            }
-
-            return lowestDistanceNode;
+            if (node.Distance < lowestDistanceNode.Distance)
+                lowestDistanceNode = node;
         }
+
+        return lowestDistanceNode;
     }
 }

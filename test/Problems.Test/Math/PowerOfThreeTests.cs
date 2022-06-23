@@ -1,39 +1,38 @@
 ﻿using Problems.Math;
 
-namespace Problems.Test.Math
+namespace Problems.Test.Math;
+
+public class PowerOfThreeTests
 {
-    public class PowerOfThreeTests
+    [Theory]
+    [InlineData(81, true)]
+    [InlineData(4782969, true)]
+    [InlineData(0, false)]
+    public void SolutionA_ValidInput_MustReturnCorrectAnswer(int input, bool answer)
     {
-        [Theory]
-        [InlineData(81, true)]
-        [InlineData(4782969, true)]
-        [InlineData(0, false)]
-        public void SolutionA_ValidInput_MustReturnCorrectAnswer(int input, bool answer)
-        {
-            //Arrange
-            var solution = new PowerOfThree();
+        //Arrange
+        var solution = new PowerOfThree();
 
-            //Act
-            var response = solution.SolutionA(input);
+        //Act
+        var response = solution.SolutionA(input);
 
-            //Assert
-            Assert.Equal(answer, response);
-        }
+        //Assert
+        Assert.Equal(answer, response);
+    }
 
-        [Theory]
-        [InlineData(81, true)]
-        [InlineData(4782969, true)]
-        [InlineData(0, false)]
-        public void SolutionB_ValidInput_MustReturnCorrectAnswer(int input, bool answer)
-        {
-            //Arrange
-            var solution = new PowerOfThree();
+    [Theory]
+    [InlineData(81, true)]
+    [InlineData(4782969, true)]
+    [InlineData(0, false)]
+    public void SolutionB_ValidInput_MustReturnCorrectAnswer(int input, bool answer)
+    {
+        //Arrange
+        var solution = new PowerOfThree();
 
-            //Act
-            var response = solution.SolutionB(input);
+        //Act
+        var response = solution.SolutionB(input);
 
-            //Assert
-            Assert.Equal(answer, response);
-        }
+        //Assert
+        Assert.Equal(answer, response);
     }
 }

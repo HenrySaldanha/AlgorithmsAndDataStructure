@@ -1,6 +1,7 @@
 ﻿using Problems.Math;
 
 namespace Problems.Test.Math;
+
 public class PalindromeNumberTests
 {
     [Theory]

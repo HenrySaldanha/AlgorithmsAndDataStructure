@@ -1,5 +1,4 @@
-﻿namespace DataStructure.Graph
-{
+﻿namespace DataStructure.Graph;
     public class AdjacencyMatrixWeightless
     {
         public AdjacencyMatrixWeightless(int maxSize)
@@ -62,4 +61,3 @@
 
         }
     }
-}

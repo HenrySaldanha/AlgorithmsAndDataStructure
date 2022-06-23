@@ -1,23 +1,22 @@
 ﻿using Problems.Math;
 
-namespace Problems.Test.Math
+namespace Problems.Test.Math;
+
+public class CountPrimesTests
 {
-    public class CountPrimesTests
+    [Theory]
+    [InlineData(10, 4)]
+    [InlineData(0, 0)]
+    [InlineData(1, 0)]
+    public void Solution_ValidInput_MustReturnCorrectAnswer(int n, int answer)
     {
-        [Theory]
-        [InlineData(10, 4)]
-        [InlineData(0, 0)]
-        [InlineData(1, 0)]
-        public void Solution_ValidInput_MustReturnCorrectAnswer(int n, int answer)
-        {
-            //Arrange
-            var solution = new CountPrimes();
+        //Arrange
+        var solution = new CountPrimes();
 
-            //Act
-            var response = solution.Solution(n);
+        //Act
+        var response = solution.Solution(n);
 
-            //Assert
-            Assert.Equal(answer, response);
-        }
+        //Assert
+        Assert.Equal(answer, response);
     }
 }

@@ -1,181 +1,179 @@
 ﻿using DataStructure.HashMap;
 
-namespace DataStructure.Test.HashMap
+namespace DataStructure.Test.HashMap;
+
+public class HashMapTests
 {
-    public class HashMapTests
+    [Fact]
+    public void Add_ValidKeyAndValue_MustAdd()
     {
-        [Fact]
-        public void Add_ValidKeyAndValue_MustAdd()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
+        //Arrange
+        var hashMap = new HashMap<int, string>();
 
-            //Act
-            hashMap
-                .Add(new HashMapNode<int, string>(1, "A"))
-                .Add(new HashMapNode<int, string>(3, "R"))
-                .Add(new HashMapNode<int, string>(4, "B"))
-                .Add(new HashMapNode<int, string>(15, "C"));
+        //Act
+        hashMap
+            .Add(new HashMapNode<int, string>(1, "A"))
+            .Add(new HashMapNode<int, string>(3, "R"))
+            .Add(new HashMapNode<int, string>(4, "B"))
+            .Add(new HashMapNode<int, string>(15, "C"));
 
-            //Assert
-            Assert.Equal(4, hashMap.Size);
-        }
+        //Assert
+        Assert.Equal(4, hashMap.Size);
+    }
 
-        [Fact]
-        public void Add_RepeatedKeyAndValue_DontAdd()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
+    [Fact]
+    public void Add_RepeatedKeyAndValue_DontAdd()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
 
-            //Act
-            hashMap
-                .Add(new HashMapNode<int, string>(1, "A"))
-                .Add(new HashMapNode<int, string>(1, "R"));
+        //Act
+        hashMap
+            .Add(new HashMapNode<int, string>(1, "A"))
+            .Add(new HashMapNode<int, string>(1, "R"));
 
-            //Assert
-            Assert.Equal(1, hashMap.Size);
-        }
+        //Assert
+        Assert.Equal(1, hashMap.Size);
+    }
 
-        [Fact]
-        public void Add_FifteenValidItems_MustAdd()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
+    [Fact]
+    public void Add_FifteenValidItems_MustAdd()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
 
-            //Act
-            hashMap
-                .Add(new HashMapNode<int, string>(1, "A"))
-                .Add(new HashMapNode<int, string>(3, "R"))
-                .Add(new HashMapNode<int, string>(4, "B"))
-                .Add(new HashMapNode<int, string>(15, "C"))
-                .Add(new HashMapNode<int, string>(33, "N"))
-                .Add(new HashMapNode<int, string>(66, "CA"))
-                .Add(new HashMapNode<int, string>(123, "FG"))
-                .Add(new HashMapNode<int, string>(3455, "TR"))
-                .Add(new HashMapNode<int, string>(-5, "NN"))
-                .Add(new HashMapNode<int, string>(2, "KK"))
-                .Add(new HashMapNode<int, string>(-7123, "TT"))
-                .Add(new HashMapNode<int, string>(-4, "UT"))
-                .Add(new HashMapNode<int, string>(123411, "EW"))
-                .Add(new HashMapNode<int, string>(4234, "XP"))
-                .Add(new HashMapNode<int, string>(-986, "QQ"));
-               
-            //Assert
-            Assert.Equal(15, hashMap.Size);
-        }
+        //Act
+        hashMap
+            .Add(new HashMapNode<int, string>(1, "A"))
+            .Add(new HashMapNode<int, string>(3, "R"))
+            .Add(new HashMapNode<int, string>(4, "B"))
+            .Add(new HashMapNode<int, string>(15, "C"))
+            .Add(new HashMapNode<int, string>(33, "N"))
+            .Add(new HashMapNode<int, string>(66, "CA"))
+            .Add(new HashMapNode<int, string>(123, "FG"))
+            .Add(new HashMapNode<int, string>(3455, "TR"))
+            .Add(new HashMapNode<int, string>(-5, "NN"))
+            .Add(new HashMapNode<int, string>(2, "KK"))
+            .Add(new HashMapNode<int, string>(-7123, "TT"))
+            .Add(new HashMapNode<int, string>(-4, "UT"))
+            .Add(new HashMapNode<int, string>(123411, "EW"))
+            .Add(new HashMapNode<int, string>(4234, "XP"))
+            .Add(new HashMapNode<int, string>(-986, "QQ"));
 
-        [Fact]
-        public void Add_NullKey_DontAdd()
-        {
-            //Arrange
-            var hashMap = new HashMap<int?, string?>();
+        //Assert
+        Assert.Equal(15, hashMap.Size);
+    }
 
-            //Act
-            hashMap
-                .Add(new HashMapNode<int?, string?>(1, "A"))
-                .Add(null)
-                .Add(new HashMapNode<int?, string?>(null, "B"))
-                .Add(new HashMapNode<int?, string?>(15, null));
+    [Fact]
+    public void Add_NullKey_DontAdd()
+    {
+        //Arrange
+        var hashMap = new HashMap<int?, string?>();
 
-            //Assert
-            Assert.Equal(1, hashMap.Size);
-        }
+        //Act
+        hashMap
+            .Add(new HashMapNode<int?, string?>(1, "A"))
+            .Add(null)
+            .Add(new HashMapNode<int?, string?>(null, "B"))
+            .Add(new HashMapNode<int?, string?>(15, null));
 
-        [Fact]
-        public void Get_NullKey_ReturnNull()
-        {
-            //Arrange
-            var hashMap = new HashMap<int?, string>();
-            var node = new HashMapNode<int?, string>(1, "A");
-            hashMap.Add(node);
+        //Assert
+        Assert.Equal(1, hashMap.Size);
+    }
 
-            //Act
-            var result = hashMap.Get(null);
+    [Fact]
+    public void Get_NullKey_ReturnNull()
+    {
+        //Arrange
+        var hashMap = new HashMap<int?, string>();
+        var node = new HashMapNode<int?, string>(1, "A");
+        hashMap.Add(node);
 
-            //Assert
-            Assert.Null(result);
-        }
+        //Act
+        var result = hashMap.Get(null);
 
-        [Fact]
-        public void Get_NullHashMap_ReturnNull()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
+        //Assert
+        Assert.Null(result);
+    }
 
-            //Act
-            var result = hashMap.Get(1);
+    [Fact]
+    public void Get_NullHashMap_ReturnNull()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
 
-            //Assert
-            Assert.Null(result);
-        }
+        //Act
+        var result = hashMap.Get(1);
 
-        [Fact]
-        public void Get_NodeExists_ReturnNode()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
-            var nodeA = new HashMapNode<int, string>(1, "A");
-            var nodeB = new HashMapNode<int, string>(2, "B");
-            var nodeC = new HashMapNode<int, string>(3, "C");
-            hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
+        //Assert
+        Assert.Null(result);
+    }
 
-            //Act
-            var result = hashMap.Get(1);
+    [Fact]
+    public void Get_NodeExists_ReturnNode()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
+        var nodeA = new HashMapNode<int, string>(1, "A");
+        var nodeB = new HashMapNode<int, string>(2, "B");
+        var nodeC = new HashMapNode<int, string>(3, "C");
+        hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
 
-            //Assert
-            Assert.Equal(nodeA,result);
-        }
+        //Act
+        var result = hashMap.Get(1);
 
-        [Fact]
-        public void Get_NodeDontExists_ReturnNull()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
-            var nodeA = new HashMapNode<int, string>(1, "A");
-            var nodeB = new HashMapNode<int, string>(2, "B");
-            var nodeC = new HashMapNode<int, string>(3, "C");
-            hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
+        //Assert
+        Assert.Equal(nodeA, result);
+    }
 
-            //Act
-            var result = hashMap.Get(10);
+    [Fact]
+    public void Get_NodeDontExists_ReturnNull()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
+        var nodeA = new HashMapNode<int, string>(1, "A");
+        var nodeB = new HashMapNode<int, string>(2, "B");
+        var nodeC = new HashMapNode<int, string>(3, "C");
+        hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
 
-            //Assert
-            Assert.Null(result);
-        }
+        //Act
+        var result = hashMap.Get(10);
 
-        [Fact]
-        public void Remove_KeyDontExists_DontRemove()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
-            var nodeA = new HashMapNode<int, string>(1, "A");
-            var nodeB = new HashMapNode<int, string>(2, "B");
-            var nodeC = new HashMapNode<int, string>(3, "C");
-            hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
+        //Assert
+        Assert.Null(result);
+    }
 
-            //Act
-            hashMap.Remove(10);
+    [Fact]
+    public void Remove_KeyDontExists_DontRemove()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
+        var nodeA = new HashMapNode<int, string>(1, "A");
+        var nodeB = new HashMapNode<int, string>(2, "B");
+        var nodeC = new HashMapNode<int, string>(3, "C");
+        hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
 
-            //Assert
-            Assert.Equal(3, hashMap.Size);
-        }
+        //Act
+        hashMap.Remove(10);
 
-        [Fact]
-        public void Remove_KeyExists_Remove()
-        {
-            //Arrange
-            var hashMap = new HashMap<int, string>();
-            var nodeA = new HashMapNode<int, string>(1, "A");
-            var nodeB = new HashMapNode<int, string>(2, "B");
-            var nodeC = new HashMapNode<int, string>(3, "C");
-            hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
+        //Assert
+        Assert.Equal(3, hashMap.Size);
+    }
 
-            //Act
-            hashMap.Remove(2);
+    [Fact]
+    public void Remove_KeyExists_Remove()
+    {
+        //Arrange
+        var hashMap = new HashMap<int, string>();
+        var nodeA = new HashMapNode<int, string>(1, "A");
+        var nodeB = new HashMapNode<int, string>(2, "B");
+        var nodeC = new HashMapNode<int, string>(3, "C");
+        hashMap.Add(nodeA).Add(nodeB).Add(nodeC);
 
-            //Assert
-            Assert.Equal(2, hashMap.Size);
-        }
+        //Act
+        hashMap.Remove(2);
 
+        //Assert
+        Assert.Equal(2, hashMap.Size);
     }
 }

@@ -14,7 +14,7 @@ public class ReverseLinkedListTests
         head.next.next = new ReverseLinkedList.ListNode(3);
         head.next.next.next = new ReverseLinkedList.ListNode(4);
         head.next.next.next.next = new ReverseLinkedList.ListNode(5);
-        
+
         //Act
         var result = solution.Solution(head);
 

@@ -1,23 +1,21 @@
-﻿namespace Search.BinarySearch
+﻿namespace Search.BinarySearch;
+public static class BinarySearch
 {
-    public static class BinarySearch
+    public static bool HasValue(this int[] array, int itemValue, int? ini = null, int? end = null)
     {
-        public static bool HasValue(this int[] array, int itemValue, int? ini = null, int? end = null)
-        {
-            ini ??= 0;
-            end ??= array.Length - 1;
+        ini ??= 0;
+        end ??= array.Length - 1;
 
-            if (ini > end)
-                return false;
+        if (ini > end)
+            return false;
 
-            var middle = ini + ((end - ini) / 2);
+        var middle = ini + ((end - ini) / 2);
 
-            if (array[middle.Value] == itemValue)
-                return true;
-            else if (array[middle.Value] > itemValue)
-                return HasValue(array, itemValue, ini, middle - 1);
-            else
-                return HasValue(array, itemValue, middle + 1, end);
-        }
+        if (array[middle.Value] == itemValue)
+            return true;
+        else if (array[middle.Value] > itemValue)
+            return HasValue(array, itemValue, ini, middle - 1);
+        else
+            return HasValue(array, itemValue, middle + 1, end);
     }
 }
