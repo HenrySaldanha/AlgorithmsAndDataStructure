@@ -1,5 +1,4 @@
-﻿using Xunit;
-using DataStructure.HashMap;
+﻿using DataStructure.HashMap;
 
 namespace DataStructure.Test.HashMap
 {

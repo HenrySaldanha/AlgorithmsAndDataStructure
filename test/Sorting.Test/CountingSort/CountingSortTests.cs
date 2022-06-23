@@ -1,6 +1,4 @@
 ﻿using Sorting.CountingSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.CountingSort
 {

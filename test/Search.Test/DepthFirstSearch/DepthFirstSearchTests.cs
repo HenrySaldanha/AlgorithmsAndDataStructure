@@ -1,5 +1,4 @@
 ﻿using DataStructure.Graph;
-using Xunit;
 
 namespace Search.Test.DepthFirstSearch
 {

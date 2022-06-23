@@ -1,6 +1,4 @@
 ﻿using Sorting.SelectionSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.SelectionSort
 {

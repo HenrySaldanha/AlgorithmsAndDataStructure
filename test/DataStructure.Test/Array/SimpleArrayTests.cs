@@ -1,5 +1,4 @@
 using DataStructure.Array;
-using Xunit;
 
 namespace DataStructure.Test.Array
 {

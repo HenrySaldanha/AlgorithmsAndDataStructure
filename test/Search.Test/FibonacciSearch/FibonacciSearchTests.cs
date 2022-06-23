@@ -1,5 +1,4 @@
 ﻿using Search.FibonacciSearch;
-using Xunit;
 
 namespace Search.Test.FibonacciSearch
 {

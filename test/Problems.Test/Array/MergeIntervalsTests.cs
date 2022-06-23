@@ -1,5 +1,4 @@
 ﻿using Problems.Array;
-using Xunit;
 
 namespace Problems.Test.Array
 {
@@ -11,7 +10,7 @@ namespace Problems.Test.Array
             //Arrange
             var solution = new MergeIntervals();
             int[][] nums = new int[3][];
-            nums[0] = new int[2] { 1, 6};
+            nums[0] = new int[2] { 1, 6 };
             nums[1] = new int[2] { 2, 3 };
             nums[2] = new int[2] { 7, 9 };
 

@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-namespace DataStructure.Test.Tree.BinarySearchTree
+﻿namespace DataStructure.Test.Tree.BinarySearchTree
 {
     public class BinarySearchTreeTests
     {

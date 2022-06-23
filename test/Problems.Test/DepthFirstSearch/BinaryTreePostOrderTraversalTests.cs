@@ -1,5 +1,4 @@
 ﻿using Problems.DepthFirstSearch;
-using Xunit;
 
 namespace Problems.Test.DepthFirstSearch
 {

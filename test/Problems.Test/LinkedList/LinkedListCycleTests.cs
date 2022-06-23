@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using Xunit;
 using static Problems.LinkedList.LinkedListCycle;
 
 namespace Problems.Test.LinkedList

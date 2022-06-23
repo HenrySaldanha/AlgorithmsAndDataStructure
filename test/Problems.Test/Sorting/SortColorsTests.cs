@@ -1,5 +1,4 @@
 ﻿using Problems.Sorting;
-using Xunit;
 
 namespace Problems.Test.Sorting
 {

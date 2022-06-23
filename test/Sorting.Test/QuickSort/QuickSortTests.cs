@@ -1,6 +1,4 @@
 ﻿using Sorting.QuickSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.QuickSort
 {

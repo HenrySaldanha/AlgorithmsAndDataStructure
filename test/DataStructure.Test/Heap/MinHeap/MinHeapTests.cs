@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-namespace DataStructure.Test.Heap.MinHeap
+﻿namespace DataStructure.Test.Heap.MinHeap
 {
     public class MinHeapTests
     {

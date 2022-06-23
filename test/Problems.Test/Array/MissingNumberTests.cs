@@ -1,5 +1,4 @@
 ﻿using Problems.Array;
-using Xunit;
 
 namespace Problems.Test.Array
 {

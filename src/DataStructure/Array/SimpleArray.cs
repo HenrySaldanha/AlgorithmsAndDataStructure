@@ -1,81 +1,79 @@
-﻿namespace DataStructure.Array
+﻿namespace DataStructure.Array;
+public class SimpleArray<T>
 {
-    public class SimpleArray<T>
+    private T[] Array;
+    public int Size { get; private set; }
+
+    public SimpleArray<T> Add(T key)
     {
-        private T[] Array;
-        public int Size { get; private set; }
+        if (key is null) return this;
 
-        public SimpleArray<T> Add(T key)
+        if (Array is null)
         {
-            if (key is null) return this;
-
-            if (Array is null)
-            {
-                Array = new T[] { key };
-                Size = 1;
-                return this;
-            }
-
-            var tempArray = new T[Array.Length + 1];
-            for (int i = 0; i < Array.Length; i++)
-                tempArray[i] = Array[i];
-
-            tempArray[tempArray.Length - 1] = key;
-            Array = tempArray;
-            Size++;
-
+            Array = new T[] { key };
+            Size = 1;
             return this;
         }
 
-        public SimpleArray<T> Remove(T key)
+        var tempArray = new T[Array.Length + 1];
+        for (int i = 0; i < Array.Length; i++)
+            tempArray[i] = Array[i];
+
+        tempArray[tempArray.Length - 1] = key;
+        Array = tempArray;
+        Size++;
+
+        return this;
+    }
+
+    public SimpleArray<T> Remove(T key)
+    {
+        if (Array is null)
+            return this;
+
+        var tempArray = new T[Array.Length - 1];
+        for (int i = 0, j = 0; i < Array.Length; i++, j++)
         {
-            if (Array is null)
+            if (j == Array.Length - 1 && !Array[i].Equals(key))
                 return this;
 
-            var tempArray = new T[Array.Length - 1];
-            for (int i = 0, j = 0; i < Array.Length; i++, j++)
-            {
-                if (j == Array.Length - 1 && !Array[i].Equals(key))
-                    return this;
+            if (Array[i].Equals(key))
+                j--;
+            else
+                tempArray[j] = Array[i];
+        }
 
-                if (Array[i].Equals(key))
-                    j--;
-                else
-                    tempArray[j] = Array[i];
-            }
+        Array = tempArray;
+        Size--;
 
-            Array = tempArray;
-            Size--;
+        return this;
+    }
 
+    public SimpleArray<T> RemoveAt(int index)
+    {
+        if (Array is null || index < 0 || index > Array.Length - 1)
             return this;
-        }
 
-        public SimpleArray<T> RemoveAt(int index)
+        var tempArray = new T[Array.Length - 1];
+        for (int i = 0, j = 0; i < Array.Length; i++, j++)
         {
-            if (Array is null || index < 0 || index > Array.Length - 1)
-                return this;
 
-            var tempArray = new T[Array.Length - 1];
-            for (int i = 0, j = 0; i < Array.Length; i++, j++)
-            {
-
-                if (i == index)
-                    j--;
-                else
-                    tempArray[j] = Array[i];
-            }
-
-            Array = tempArray;
-            Size--;
-
-            return this;
+            if (i == index)
+                j--;
+            else
+                tempArray[j] = Array[i];
         }
 
-        public void Traverse()
-        {
-            for (int i = 0; i < Array.Length - 1; i++)
-                Console.Write(Array[i] + " ");
-            Console.WriteLine(Array[Array.Length - 1]);
-        }
+        Array = tempArray;
+        Size--;
+
+        return this;
+    }
+
+    public void Traverse()
+    {
+        for (int i = 0; i < Array.Length - 1; i++)
+            Console.Write(Array[i] + " ");
+        Console.WriteLine(Array[Array.Length - 1]);
     }
 }

@@ -1,6 +1,4 @@
 ﻿using Sorting.MergeSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.MergeSort
 {

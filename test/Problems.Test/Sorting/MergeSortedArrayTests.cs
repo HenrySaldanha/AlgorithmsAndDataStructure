@@ -1,6 +1,4 @@
 ﻿using Problems.Sorting;
-using System.Linq;
-using Xunit;
 
 namespace Problems.Test.Sorting
 {

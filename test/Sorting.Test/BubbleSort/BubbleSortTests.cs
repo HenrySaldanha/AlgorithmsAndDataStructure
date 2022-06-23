@@ -1,6 +1,4 @@
 ﻿using Sorting.BubbleSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.BubbleSort
 {

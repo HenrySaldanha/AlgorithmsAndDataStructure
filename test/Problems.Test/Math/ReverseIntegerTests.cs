@@ -1,5 +1,4 @@
 ﻿using Problems.Math;
-using Xunit;
 
 namespace Problems.Test.Math
 {

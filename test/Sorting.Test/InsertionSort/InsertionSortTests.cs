@@ -1,6 +1,4 @@
 ﻿using Sorting.InsertionSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.InsertionSort
 {

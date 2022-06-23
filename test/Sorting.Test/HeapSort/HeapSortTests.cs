@@ -1,6 +1,4 @@
 ﻿using Sorting.HeapSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.HeapSort
 {

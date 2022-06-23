@@ -1,5 +1,4 @@
 ﻿using Problems.HashTable;
-using Xunit;
 
 namespace Problems.Test.HashTable
 {

@@ -1,5 +1,4 @@
 ﻿using Search.Prim;
-using Xunit;
 
 namespace Search.Test.Prim
 {

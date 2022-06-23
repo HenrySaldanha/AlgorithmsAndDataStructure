@@ -1,6 +1,4 @@
-﻿using Xunit;
-
-namespace DataStructure.Test.Tree.AVL
+﻿namespace DataStructure.Test.Tree.AVL
 {
     public class AVLTests
     {

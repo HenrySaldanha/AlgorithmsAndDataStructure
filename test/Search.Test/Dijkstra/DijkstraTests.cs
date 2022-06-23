@@ -1,6 +1,4 @@
-﻿using System.Linq;
-using Search.Dijkstra;
-using Xunit;
+﻿using Search.Dijkstra;
 
 namespace Search.Test.Dijkstra
 {

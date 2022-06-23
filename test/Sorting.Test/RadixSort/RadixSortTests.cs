@@ -1,6 +1,4 @@
 ﻿using Sorting.RadixSort;
-using System.Linq;
-using Xunit;
 
 namespace Sorting.Test.RadixSort
 {

@@ -1,6 +1,4 @@
 ﻿using Problems.String;
-using System.Linq;
-using Xunit;
 
 namespace Problems.Test.String
 {

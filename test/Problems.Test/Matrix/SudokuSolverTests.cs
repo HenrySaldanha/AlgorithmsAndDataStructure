@@ -1,5 +1,4 @@
 ﻿using Problems.Matrix;
-using Xunit;
 
 namespace Problems.Test.Matrix
 {

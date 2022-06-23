@@ -1,5 +1,4 @@
 ﻿using Problems.Matrix;
-using Xunit;
 
 namespace Problems.Test.Matrix
 {
@@ -7,7 +6,7 @@ namespace Problems.Test.Matrix
     {
         [Fact]
         public void SolutionA_ValidInput_MustReturnTrue()
-        { 
+        {
             //Arrange
             var solution = new RotateImage();
 
