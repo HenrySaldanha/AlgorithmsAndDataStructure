@@ -1,15 +1,15 @@
 ﻿namespace Problems.Test.String;
 
-public class FirstUniqueCharacterInAStringTests
+public class CountAsterisksTests
 {
     [Theory]
-    [InlineData("leetcode", 0)]
-    [InlineData("loveleetcode", 2)]
-    [InlineData("aabb", -1)]
+    [InlineData("iamprogrammer", 0)]
+    [InlineData("yo|uar|e**|b|e***au|tifu|l", 5)]
+    [InlineData("l|*e*et|c**o|*de|", 2)]
     public void Solution_ValidInput_MustReturnCorrectAnswer(string input, int responseExpected)
     {
         //Arrange
-        var solution = new FirstUniqueCharacterInAString();
+        var solution = new CountAsterisks();
 
         //Act
         var response = solution.Solution(input);

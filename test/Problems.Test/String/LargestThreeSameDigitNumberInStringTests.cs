@@ -1,6 +1,4 @@
-﻿using Problems.String;
-
-namespace Problems.Test.String;
+﻿namespace Problems.Test.String;
 
 public class LargestThreeSameDigitNumberInStringTests
 {
