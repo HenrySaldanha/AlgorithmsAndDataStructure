@@ -1,6 +1,4 @@
-﻿using Problems.Matrix;
-
-namespace Problems.Test.Matrix;
+﻿namespace Problems.Test.Matrix;
 
 public class ValidSudokuTests
 {

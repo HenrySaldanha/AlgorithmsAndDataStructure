@@ -1,6 +1,4 @@
-﻿using Problems.Math;
-
-namespace Problems.Test;
+﻿namespace Problems.Test;
 
 public class GreatestCommonDivisorTests
 {

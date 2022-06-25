@@ -1,6 +1,4 @@
-﻿using Problems.HashTable;
-
-namespace Problems.Test.HashTable;
+﻿namespace Problems.Test.HashTable;
 
 public class RansomNoteTests
 {

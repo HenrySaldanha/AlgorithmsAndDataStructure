@@ -1,6 +1,4 @@
-﻿using Problems.DepthFirstSearch;
-
-namespace Problems.Test.DepthFirstSearch;
+﻿namespace Problems.Test.DepthFirstSearch;
 
 public class BinaryTreePreOrderTraversalTests
 {

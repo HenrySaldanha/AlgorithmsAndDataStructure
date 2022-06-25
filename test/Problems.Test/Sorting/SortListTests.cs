@@ -1,6 +1,4 @@
-﻿using Sorting;
-
-namespace Problems.Test.Sorting;
+﻿namespace Problems.Test.Sorting;
 
 public class SortListTests
 {
