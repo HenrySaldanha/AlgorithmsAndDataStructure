@@ -1,4 +1,4 @@
-﻿namespace Problems.Test;
+﻿namespace Problems.Test.Math;
 
 public class GreatestCommonDivisorTests
 {
