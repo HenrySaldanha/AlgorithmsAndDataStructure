@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using static Problems.LinkedList.SwapNodesInPairs;
 
 namespace Problems.Test.LinkedList;
 
@@ -10,7 +9,7 @@ public class SwapNodesInPairsTests
     {
         //Arrange
         var solution = new SwapNodesInPairs();
-        var head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+        var head = new SwapNodesInPairs.ListNode(1, new SwapNodesInPairs.ListNode(2, new SwapNodesInPairs.ListNode(3, new SwapNodesInPairs.ListNode(4))));
 
         //Act
         var response = solution.Solution(head);

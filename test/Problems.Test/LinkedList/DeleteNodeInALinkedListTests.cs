@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using static Problems.LinkedList.DeleteNodeInALinkedList;
 
 namespace Problems.Test.LinkedList;
 
@@ -10,9 +9,9 @@ public class DeleteNodeInALinkedListTests
     {
         //Arrange
         var solution = new DeleteNodeInALinkedList();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new DeleteNodeInALinkedList.ListNode(1);
+        head.next = new DeleteNodeInALinkedList.ListNode(2);
+        head.next.next = new DeleteNodeInALinkedList.ListNode(3);
 
         //Act
         solution.Solution(head.next);

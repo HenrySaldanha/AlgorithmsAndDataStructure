@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using static Problems.LinkedList.RemoveNthNodeFromEndOfList;
 
 namespace Problems.Test.LinkedList;
 
@@ -10,9 +9,9 @@ public class RemoveNthNodeFromEndOfListTests
     {
         //Arrange
         var solution = new RemoveNthNodeFromEndOfList();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new RemoveNthNodeFromEndOfList.ListNode(1);
+        head.next = new RemoveNthNodeFromEndOfList.ListNode(2);
+        head.next.next = new RemoveNthNodeFromEndOfList.ListNode(3);
 
         //Act
         var result = solution.Solution(head, 1);
@@ -28,9 +27,9 @@ public class RemoveNthNodeFromEndOfListTests
     {
         //Arrange
         var solution = new RemoveNthNodeFromEndOfList();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new RemoveNthNodeFromEndOfList.ListNode(1);
+        head.next = new RemoveNthNodeFromEndOfList.ListNode(2);
+        head.next.next = new RemoveNthNodeFromEndOfList.ListNode(3);
 
         //Act
         var result = solution.Solution(head, 3);

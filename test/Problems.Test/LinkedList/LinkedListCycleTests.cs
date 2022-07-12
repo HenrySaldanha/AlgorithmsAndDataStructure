@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using static Problems.LinkedList.LinkedListCycle;
 
 namespace Problems.Test.LinkedList;
 
@@ -10,9 +9,9 @@ public class LinkedListCycleTests
     {
         //Arrange
         var solution = new LinkedListCycle();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new LinkedListCycle.ListNode(1);
+        head.next = new LinkedListCycle.ListNode(2);
+        head.next.next = new LinkedListCycle.ListNode(3);
         head.next.next.next = head.next;
 
         //Act
@@ -27,9 +26,9 @@ public class LinkedListCycleTests
     {
         //Arrange
         var solution = new LinkedListCycle();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new LinkedListCycle.ListNode(1);
+        head.next = new LinkedListCycle.ListNode(2);
+        head.next.next = new LinkedListCycle.ListNode(3);
 
         //Act
         var result = solution.SolutionA(head);
@@ -43,9 +42,9 @@ public class LinkedListCycleTests
     {
         //Arrange
         var solution = new LinkedListCycle();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new LinkedListCycle.ListNode(1);
+        head.next = new LinkedListCycle.ListNode(2);
+        head.next.next = new LinkedListCycle.ListNode(3);
         head.next.next.next = head.next;
 
         //Act
@@ -60,9 +59,9 @@ public class LinkedListCycleTests
     {
         //Arrange
         var solution = new LinkedListCycle();
-        var head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
+        var head = new LinkedListCycle.ListNode(1);
+        head.next = new LinkedListCycle.ListNode(2);
+        head.next.next = new LinkedListCycle.ListNode(3);
 
         //Act
         var result = solution.SolutionB(head);

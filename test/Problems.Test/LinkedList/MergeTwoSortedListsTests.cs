@@ -1,5 +1,4 @@
 ﻿using Problems.LinkedList;
-using static Problems.LinkedList.MergeTwoSortedLists;
 
 namespace Problems.Test.LinkedList;
 
@@ -10,13 +9,13 @@ public class MergeTwoSortedListsTests
     {
         //Arrange
         var solution = new MergeTwoSortedLists();
-        var list1 = new ListNode(1);
-        list1.next = new ListNode(2);
-        list1.next.next = new ListNode(4);
+        var list1 = new MergeTwoSortedLists.ListNode(1);
+        list1.next = new MergeTwoSortedLists.ListNode(2);
+        list1.next.next = new MergeTwoSortedLists.ListNode(4);
 
-        var list2 = new ListNode(1);
-        list2.next = new ListNode(3);
-        list2.next.next = new ListNode(4);
+        var list2 = new MergeTwoSortedLists.ListNode(1);
+        list2.next = new MergeTwoSortedLists.ListNode(3);
+        list2.next.next = new MergeTwoSortedLists.ListNode(4);
 
         //Act
         var result = solution.Solution(list1, list2);
@@ -35,9 +34,9 @@ public class MergeTwoSortedListsTests
     {
         //Arrange
         var solution = new MergeTwoSortedLists();
-        var list1 = new ListNode(1);
-        list1.next = new ListNode(5);
-        list1.next.next = new ListNode(12);
+        var list1 = new MergeTwoSortedLists.ListNode(1);
+        list1.next = new MergeTwoSortedLists.ListNode(5);
+        list1.next.next = new MergeTwoSortedLists.ListNode(12);
 
         //Act
         var result = solution.Solution(list1, null);
