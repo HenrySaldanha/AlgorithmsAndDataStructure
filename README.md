@@ -21,10 +21,6 @@ For data structure, we only look at worst-case time complexity.
 | [Min Heap](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Heap/MinHeap/MinHeap.cs)  |      O(log(n))     |      O(log(n))        |    O(n)    |        |
 | [AVL](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Tree/AVL/AVL.cs) | O(log(n))      | O(log(n)) | O(log(n))   |    |
 | [Binary Search Tree](https://github.com/HenrySaldanha/algorithms/blob/main/src/DataStructure/Tree/BinarySearchTree/BinarySearchTree.cs) | O(n)      | O(n) | O(n)   |    |
-| B-Tree   |           |              |        |        |
-| B+ Tree  |           |              |        |        |
-| Red-Black Tree |           |              |        |        |
-| 2-3 Tree  |           |              |        |        |
 
 ## Sorting Algorithms
 
@@ -50,7 +46,7 @@ For data structure, we only look at worst-case time complexity.
 | [Depth-First Search](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/DepthFirstSearch/DepthFirstSearch.cs)   |        |     O(V+E)     |      |
 | A*                   |      |         |       |
 | Predictive Search    |      |         |       |
-| Interpolation Search |      |         |
+| [Interpolation Search](https://github.com/HenrySaldanha/AlgorithmsAndDataStructure/blob/main/src/Search/InterpolationSearch/InterpolationSearch.cs) |   O(log(log(n))   |    O(log(log(n))     | O(n) |
 | [Fibonacci Search](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/FibonacciSearch/FibonacciSearch.cs)      |   O(1)   |    O(log(n))     |   O(log(n))    |
 | Kruskal's Algorithm  |      |         |       |
 | [Prim's Algorithm](https://github.com/HenrySaldanha/algorithms/blob/main/src/Search/Prim/PrimAlgorithm.cs)   |    O(v^2)    |    O(v^2)     |   O(v^2)    |
