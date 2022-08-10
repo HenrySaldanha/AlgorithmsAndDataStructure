@@ -1,7 +1,5 @@
 This repository has the objective of presenting examples of data structure, search algorithms, sorting algorithms, and their respective complexities in the worst case. 
 
-To apply the concepts of the topics above, I created a project called "problems", in this project I solve problems of the [leetcode](https://leetcode.com/) platform. The explanation of each problem is in the solution itself. You can find them by accessing the root of the solution and `/src/problems`
-
 For most of the code I also developed the unit tests, you can find them by accessing the root of the solution and `/test`.
 
 This repository is under construction so some algorithms mentioned in the tables may be missing from the solution
